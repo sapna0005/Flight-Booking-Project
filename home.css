@@ -1,0 +1,519 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    
+}
+
+/* ----------------------------Nav-Bar------------------------------------ */
+#login-page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(19, 7, 69);
+    
+}
+#para{
+    color: rgb(90, 5, 5);
+    font-style:oblique;
+    font-size: 25px;
+}
+#aero{
+    color: rgb(235, 126, 239);
+    font-style:oblique;
+    font-size: 25px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+nav ul li{
+    margin-right: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:aliceblue;
+    font-size: 16px;
+}
+nav ul li a i{
+    font-size:19px ;
+    color: aliceblue;
+}
+.login{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.login p{
+    border: 1px;
+    border-radius:10px;
+    padding:10px;
+    font-size:15px;
+    background:linear-gradient(to right,rgb(78, 222, 78),rgb(16, 111, 16));
+}
+.login p:hover{
+    background:linear-gradient(to right,rgb(12, 92, 12),rgb(98, 218, 98));
+}
+.login p a{
+  text-decoration: none;
+  margin-right: 20px;
+  color: aliceblue;
+}
+.login h4{
+    border: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    background: linear-gradient(to right, rgb(211, 176, 110), rgb(212, 127, 42));
+}
+.login h4:hover{
+    background:linear-gradient(to right, rgb(212, 127, 42), rgb(211, 176, 110));
+}
+.login h4 a{
+  text-decoration: none;
+  margin-right: 20px;
+  color: aliceblue;
+}
+
+/* -------------------------Home-Page------------------------------------------- */
+
+#home-page{
+    height: 100vh;
+}
+#ticket-search {
+    background-color: rgb(81, 81, 193);
+    height: 250px;
+}
+#trip{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 30px;
+    font-size: 14px;
+    
+}
+#trip #trip1{
+    border: 1px;
+    border-radius: 15px;
+    padding: 7px;
+    background-color: white;
+    color: navy;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+#trip #trip2{
+    border: 1px;
+    border-radius: 15px;
+    padding: 7px;
+    background-color: white;
+    color:navy;
+    font-weight: bold;
+    cursor: pointer;
+}
+#trip #trip3{
+    border: 1px;
+    border-radius: 15px;
+    padding: 7px;
+    background-color: white;
+    color: navy;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* -----Input-bar---- */
+#destination{
+    height: 100px;
+    background-color: aliceblue;
+    border: 1px;
+    border-radius: 15px;
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+#destination #from{
+    height:100px ;
+    width: 250px;
+    margin: 8px;
+    
+}
+
+
+
+/* ---------------------Offer Page------------------------ */
+h1{
+  margin-left: 30px;
+    font-weight: bold;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 220px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px; 
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-left: 20px;
+}
+
+/* --------------------Cheapest Flight Page------------------ */
+
+#cheapestflight{
+    height: 100vh;
+    width: 100%;
+}
+#cheapestfares{
+    height: 500px;
+    border: 1px solid rgb(128, 114, 114);
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 0px 4px 8px;
+    background-color: white;
+}
+h1{
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+}
+/* list of cities */
+#city{
+    display: flex;
+    flex-direction: row;
+}
+
+.city-dropdown {
+    border-radius: 2px;
+    margin: 15px;
+    height: 20px;
+}
+
+  /* Cheapest Flight images */
+  .swiper2 {
+    width: 100%;
+    margin-top: 30px;
+    height: 380px; /* Adjust the height as per your design */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .swiper2 .swiper-wrapper {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .swiper2 .swiper-slide {
+    flex: 1 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* .card { 
+     display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    border: none; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff; 
+     height: 310px;
+  } */
+  
+  .card img {
+    width: 300px;
+    height: 200px; 
+    object-fit: cover;
+    border: none;
+  }
+  
+  .card-details {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .place-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .price {
+    font-size: 16px;
+    color: #888;
+    margin-top: 5px;
+  }
+  
+  .book-flight {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 12px;
+    background-color: rgb(24, 3, 109);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .book-flight:hover {
+    background-color: #0056b3;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #007bff;
+    font-size: 16px;
+  }
+ 
+  .swiper-pagination {
+    bottom: 10px;
+   
+  }
+  
+  .swiper-pagination-bullet {
+    background: rgb(112, 31, 1);
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: rgb(112, 31, 1);
+  }
+
+  /*---- flight routes code----*/
+
+  #thirdpage{
+    height: 100vh;
+    background-color:whitesmoke ;
+    margin-bottom: 50px;
+  }
+  #thirdpage h1{
+    padding-top: 50px;
+  }
+  #routes{
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+    gap: 20px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  #routes .flight-routes{
+    height: 90px;
+    border: 1px solid rgb(218, 206, 206);
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden; 
+    background-color: whitesmoke;
+    
+    }
+    .flight-routes .abc {
+      height: 110px;
+      overflow: hidden;
+    }
+  
+   .abc img {
+    height: 110px;
+    border-radius: 10px;
+    width: 70px;
+  }
+  .flight-routes .xyz{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  .flight-routes .xyz p {
+    margin: 0; 
+    padding-top: 10px; 
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.flight-routes .xyz h4 {
+    margin: 0; 
+    margin-top: 5px; 
+    font-weight: lighter;
+    
+}
+
+.flight-routes .xyz h4 a {
+    margin-right: 10px; 
+    color: rgb(6, 6, 226);
+    text-decoration: inherit;
+    cursor: pointer;
+    line-height: 1.4;
+}
+  
+/* booking form */
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input, select, button {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.faq-container {
+  margin-top: 40px;
+}
+
+.faq-item {
+  margin: 10px 0;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  border-radius: 8px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.faq-item h2 {
+  margin: 0;
+}
+
+.faq-item p {
+  margin-top: 10px;
+}
+
+.faq-item:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.faq-item:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+  /* Footer styles */
+  footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    color: #007BFF;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        width: 100%;
+    }
+
+    footer .social-icons {
+        flex-direction: column;
+    }
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+
+

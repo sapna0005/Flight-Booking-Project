@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+  <form>
+    <!-- h1 tag -->
+  <marquee behavior="scroll" direction="left">
+  <h1>
+    <span class="welcome">Welcome</span> 
+    <span class="on">Onboard</span>
+  </h1>
+ </marquee>
+  <br><br>
+
+  <!-- Name -->
+  <p id="errname"></p>
+  Name <input type="text" id="name"> <br><br>
+
+  <!-- Email -->
+  <p id="erremail"></p>
+  Email <input type="text" id="email"> <br><br>
+
+  <!-- Mobile -->
+  <p id="errmobile"></p>
+  Mobile <input type="number" id="mobile"> <br><br>
+
+  <!-- Password -->
+  <p id="errpass"></p>
+  Password <input type="password" id="pass"> <br><br>
+  
+  <!-- Signup button -->
+  <input type="submit" value="Sign up" onclick="return signup()">
+</form>
+
+
+    <script src="local.js"></script>
+</body>
+</html>
