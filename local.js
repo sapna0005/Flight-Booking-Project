@@ -92,6 +92,34 @@ let login=()=>{
 
 }
 
+setInterval(() => {
+    let show = document.querySelector("#clockk");
+    let date = new Date();
+    let hours = `<span class="hours">${date.getHours().toString().padStart(2,"0")}</span>`;
+    let minutes = `<span class="minutes">${date.getMinutes().toString().padStart(2,"0")}</span>`;
+    let seconds = `<span class="seconds">${date.getSeconds().toString().padStart(2,"0")}</span>`;
+    show.innerHTML = `${hours} <span class="colon">: </span> ${minutes} <span class="colon">: </span> ${seconds}`;
+  }, 1000);
+
+document.querySelector('.swap-icon').addEventListener('click', function() {
+    const fromCity = document.getElementById('from-city');
+    const toCity = document.getElementById('to-city');
+    const temp = fromCity.value;
+    fromCity.value = toCity.value;
+    toCity.value = temp;
+});
+
+// Placeholder for date picker and traveller options (implementation depends on chosen libraries)
+document.getElementById('departure-date').addEventListener('focus', function() {
+    // Code to show a date & time picker goes here
+    alert('Date & Time picker will be displayed here.');
+});
+
+document.getElementById('travellers').addEventListener('focus', function() {
+    // Code to show traveller selection options goes here
+    alert('Traveller options will be displayed here.');
+});
+
 
 
 var swiper1 = new Swiper(".mySwiper", {

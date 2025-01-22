@@ -10,6 +10,11 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lexend+Giga:wght@100..900&family=Lobster&family=Oleo+Script:wght@400;700&family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="home.css">
   <title>Document</title>
 </head>
@@ -17,8 +22,11 @@
 <body>
   <!-- --------------------Nav-Bar---------------------------------------- -->
   <div id="login-page">
-    <h3 id="para" data-aos="flip-right" data-aos-duration="3000" data-aos-delay="200">Dream<span id="aero">Aero</span>
+   <div class="logo">
+    <img src="https://cdn-icons-gif.flaticon.com/11614/11614833.gif" alt="">
+    <h3 id="para" data-aos="flip-right" data-aos-duration="3000" data-aos-delay="200">DreamAero
     </h3>
+  </div>
     <nav>
       <ul>
         <li data-aos="flip-down" data-aos-duration="3000" data-aos-delay="600"><a href="#"><i
@@ -35,57 +43,59 @@
     </div>
   </div>
   <hr>
+  <br>
 
+  <marquee behavior="scroll" direction="right">
+    <div id="clockk"></div>
+  </marquee>
   <!-- -----------------------------Home-Page---------------------------------------------- -->
 
   <section id="home-page">
     <div id="ticket-search">
       <div id="trip">
         <p id="trip1"><a href="#">One Way</a></p>
-        <p id="trip2"><a href="#">Round Trip</a></p>
-        <p id="trip3"><a href="#">Multicity</a></p>
+        <p id="trip1"><a href="#">Round Trip</a></p>
+        <p id="trip1"><a href="#">Multicity</a></p>
       </div>
-
+      
       <!-- Input bar -->
-      <div id="destination">
-        <div id="from">
-          FROM
-          <option value="">
-
-
-          </option>
-
-        </div>
-
-        <div id="to">
-          TO
-        </div>
-
+      <div class="flight-form">
         <div>
-          DEPARTURE DATE
+            <label for="from-city">From:</label>
+            <select id="from-city">
+                <option value="NYC">New York</option>
+                <option value="LAX">Los Angeles</option>
+                <option value="CHI">Chicago</option>
+                <!-- More cities can be added here -->
+            </select>
         </div>
-
         <div>
-          RETURN DATE
+            <i class="fas fa-exchange-alt swap-icon"></i>
+            <label for="to-city">To:</label>
+            <select id="to-city">
+                <option value="LAX">Los Angeles</option>
+                <option value="NYC">New York</option>
+                <option value="CHI">Chicago</option>
+                <!-- More cities can be added here -->
+            </select>
         </div>
-
         <div>
-          TRAVELLER & CLASS
+            <label for="departure-date">Departure:</label>
+            <input type="text" id="departure-date" placeholder="Select Date & Time">
         </div>
-
         <div>
-          <input type="search" id="search" value="SEARCH">
+            <label for="travellers">Travellers:</label>
+            <input type="text" id="travellers" placeholder="Select Travellers">
         </div>
-
-      </div>
-      <div>
-
-      </div>
     </div>
-    <br><br><br>
+  </div>
+</section>
+    <br><br>
+        
+   
     <!-- ----------------Offer Page-------------- -->
-    <h1>Exclusive Offer</h1><br>
-    <div class="swiper mySwiper">
+    <h1>Exclusive Offer</h1>
+    <div class="swiper mySwiper" id="offers">
       <div class="swiper-wrapper">
         <div class="swiper-slide" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="900"><img
             src="https://images.ixigo.com/image/upload/bhanu/9c0b8bc0089deb13e8915ee520a61ee9-bgsik.png"></div>
@@ -110,7 +120,7 @@
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
     </div>
-  </section>
+  
   <br><br>
 
   <!-- -------------------Cheapest Flight Page----------------------- -->
@@ -246,8 +256,9 @@
   
 
 <!-- ---------flight routes code------ -->
-<section id="thirdpage">
-    <h1>Popular Flight Routes</h1> <br><br>
+<section id="thirdpage"><br>
+    <h1>Popular Flight Routes</h1>
+    
    <div id="routes">
        <div class="flight-routes">
        <div class="abc">
@@ -386,6 +397,8 @@
     </div>
 </div>
  </section>
+
+     <!-- Booking Form Section -->
  <section id="bookingform">
   <div class="container">
       <h1>Flight Booking Form</h1>
@@ -430,9 +443,8 @@
           <button type="submit">Book Flight</button>
       </form>
   </div>
-</section>
 
-<section>
+
   <div class="container faq-container">
       <h1>Frequently Asked Questions</h1>
 
@@ -509,9 +521,10 @@
  
  
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
- 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
