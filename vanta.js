@@ -1,7 +1,4 @@
 
-
-
-
 VANTA.FOG({
   el: "#offers",
   mouseControls: true,
@@ -22,8 +19,22 @@ VANTA.HALO({
   minHeight: 200.00,
   minWidth: 200.00,
   baseColor: 0x37b6d1,
-  backgroundColor: 0xb5c8e8
+  backgroundColor: 0xacb5e3
 })
+
+VANTA.CLOUDS({
+  el: "#bookingform",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  skyColor: 0x6f9ccc,
+  cloudShadowColor: 0x2570b3,
+  speed: 1.40
+})
+
+
 
 
 

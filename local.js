@@ -109,16 +109,11 @@ document.querySelector('.swap-icon').addEventListener('click', function() {
     toCity.value = temp;
 });
 
-// Placeholder for date picker and traveller options (implementation depends on chosen libraries)
-document.getElementById('departure-date').addEventListener('focus', function() {
-    // Code to show a date & time picker goes here
-    alert('Date & Time picker will be displayed here.');
+document.getElementById('travellers').addEventListener('focus', function() {
+   alert('Traveller options will be displayed here.');
 });
 
-document.getElementById('travellers').addEventListener('focus', function() {
-    // Code to show traveller selection options goes here
-    alert('Traveller options will be displayed here.');
-});
+
 
 
 
@@ -137,19 +132,21 @@ var swiper1 = new Swiper(".mySwiper", {
 
   
 
+  
+
   const swiper2 = new Swiper('.swiper2', {
     slidesPerView: 3,
     spaceBetween: 10,
-    loop: true, // Ensure looping is enabled for continuous scrolling
-    navigation: {
-        nextEl: '.swiper2 .swiper-button-next',
-        prevEl: '.swiper2 .swiper-button-prev',
-    },
     pagination: {
-        el: '.swiper2 .swiper-pagination',
-        clickable: true,
+      el: ".swiper-pagination",
+      clickable: true,
     },
-});
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+  });
+  
 
 
 

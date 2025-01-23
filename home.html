@@ -43,11 +43,11 @@
     </div>
   </div>
   <hr>
-  <br>
+ 
 
-  <marquee behavior="scroll" direction="right">
+ 
     <div id="clockk"></div>
-  </marquee>
+  
   <!-- -----------------------------Home-Page---------------------------------------------- -->
 
   <section id="home-page">
@@ -60,7 +60,7 @@
       
       <!-- Input bar -->
       <div class="flight-form">
-        <div>
+        <div class="form1">
             <label for="from-city">From:</label>
             <select id="from-city">
                 <option value="NYC">New York</option>
@@ -69,7 +69,7 @@
                 <!-- More cities can be added here -->
             </select>
         </div>
-        <div>
+        <div class="form2">
             <i class="fas fa-exchange-alt swap-icon"></i>
             <label for="to-city">To:</label>
             <select id="to-city">
@@ -79,13 +79,20 @@
                 <!-- More cities can be added here -->
             </select>
         </div>
-        <div>
+        <div class="form3">
             <label for="departure-date">Departure:</label>
-            <input type="text" id="departure-date" placeholder="Select Date & Time">
+            <input type="date" id="departure-date" placeholder="Select Date & Time">
         </div>
-        <div>
+        <div class="form4">
+          <label for="return">Return</label>
+            <input type="date" id="return">
+        </div>
+        <div class="form5">
             <label for="travellers">Travellers:</label>
             <input type="text" id="travellers" placeholder="Select Travellers">
+        </div>
+        <div>
+         <input type="search" value="SEARCH" id="search">
         </div>
     </div>
   </div>
@@ -94,6 +101,7 @@
         
    
     <!-- ----------------Offer Page-------------- -->
+     
     <h1>Exclusive Offer</h1>
     <div class="swiper mySwiper" id="offers">
       <div class="swiper-wrapper">
@@ -121,145 +129,11 @@
       <div class="swiper-button-prev"></div>
     </div>
   
-  <br><br>
+  <br><br><br><br>
 
-  <!-- -------------------Cheapest Flight Page----------------------- -->
-  <section id="cheapestflight">
-    <div id="cheapestfares">
-
-      <!-- list of cities -->
-      <!-- <div id="city"> -->
-        <h1>Cheapest Fares From </h1>
-        <!-- <select class="city-dropdown" multiple> -->
-
-        <!-- <div id="mainDiv">
-          <div id="search">
-            <option value="new delhi" selected>New Delhi</option>
-            <option value="mumbai">Mumbai</option>
-            <option value="hyderabad">Hyderabad</option>
-            <option value="bengaluru">Bengaluru</option>
-            <option value="chennai">Chennai</option>
-            <option value="goa">Goa</option>
-          </div>
-        </div> -->
-        <!-- </select> -->
-      <!-- </div> -->
-
-      <!-- cheapest flight image -->
-      
-      <div class="swiper2">
-        <div class="swiper-wrapper">
-          <!-- Slide 1 -->
-          <div class="swiper-slide">
-            <div class="card">
-              <img src="https://images-cf.ixigo.workers.dev/v2/images_by_id/503b2a83e4b032e338f11b77.jpg?cityName=Jaipur" alt=""  data-aos="fade-down" data-aos-duration="3000" data-aos-delay="1200">
-              <div class="card-details">
-                <p class="place-name"  data-aos="fade-right" data-aos-duration="3000" data-aos-delay="900">Jaipur, Rajasthan</p>
-                <p class="price"  data-aos="fade-left" data-aos-duration="3000" data-aos-delay="900">Price: ₹5000</p>
-                <a href="#" class="book-flight"  data-aos="fade-up" data-aos-duration="3000" data-aos-delay="2000">Book Flight</a>
-              </div>
-            </div>
-          </div>
-      
-          <!-- Slide 2 -->
-          <div class="swiper-slide">
-            <div class="card">
-              <img src="https://images-cf.ixigo.workers.dev/v2/images_by_id/503b2a8fe4b032e338f13897.jpg?cityName=Chandigarh" alt=""  data-aos="fade-down" data-aos-duration="3000" data-aos-delay="1200">
-              <div class="card-details">
-                <p class="place-name"  data-aos="fade-right" data-aos-duration="3000" data-aos-delay="900">Chandigarh</p>
-                <p class="price"  data-aos="fade-left" data-aos-duration="3000" data-aos-delay="900">Price: ₹4000</p>
-                <a href="#" class="book-flight"  data-aos="fade-up" data-aos-duration="3000" data-aos-delay="2000">Book Flight</a>
-              </div>
-            </div>
-          </div>
-      
-          <!-- Slide 3 -->
-          <div class="swiper-slide">
-            <div class="card">
-              <img src="https://images-cf.ixigo.workers.dev/v2/images_by_id/575664b7bad3eb1cba5afbd7.jpg?cityName=Leh" alt="" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="1200">
-              <div class="card-details">
-                <p class="place-name"  data-aos="fade-right" data-aos-duration="3000" data-aos-delay="900">Leh, Ladakh</p>
-                <p class="price"  data-aos="fade-left" data-aos-duration="3000" data-aos-delay="900">Price: ₹8000</p>
-                <a href="#" class="book-flight"  data-aos="fade-up" data-aos-duration="3000" data-aos-delay="2000">Book Flight</a>
-              </div>
-            </div>
-          </div>
-      
-          <!-- Slide 4 -->
-          <div class="swiper-slide">
-            <div class="card">
-              <img src="https://images-cf.ixigo.workers.dev/v2/images_by_id/503b2a98e4b032e338f14f01.jpg?cityName=Amritsar" alt="" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="1200">
-              <div class="card-details">
-                <p class="place-name"  data-aos="fade-right" data-aos-duration="3000" data-aos-delay="900">Amritsar, Punjab</p>
-                <p class="price"  data-aos="fade-left" data-aos-duration="3000" data-aos-delay="900">Price: ₹3500</p>
-                <a href="#" class="book-flight"  data-aos="fade-up" data-aos-duration="3000" data-aos-delay="2000">Book Flight</a>
-              </div>
-            </div>
-          </div>
-      
-          <!-- Slide 5 -->
-          <div class="swiper-slide">
-            <div class="card">
-              <img src="https://images-cf.ixigo.workers.dev/v2/images_by_id/503b2a64e4b032e338f0d0af.jpg?cityName=Shimla" alt="" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="1200">
-              <div class="card-details">
-                <p class="place-name"  data-aos="fade-right" data-aos-duration="3000" data-aos-delay="900">Shimla, Himachal Pradesh</p>
-                <p class="price"  data-aos="fade-left" data-aos-duration="3000" data-aos-delay="900">Price: ₹5500</p>
-                <a href="#" class="book-flight"  data-aos="fade-up" data-aos-duration="3000" data-aos-delay="2000">Book Flight</a>
-              </div>
-            </div>
-          </div>
-      
-          <!-- Slide 6 -->
-          <div class="swiper-slide">
-            <div class="card">
-              <img src="https://images-cf.ixigo.workers.dev/v2/images_by_id/503b2a97e4b032e338f14b99.jpg?cityName=Ayodhya" alt="" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="1200">
-              <div class="card-details">
-                <p class="place-name"  data-aos="fade-right" data-aos-duration="3000" data-aos-delay="900">Ayodhya, Uttar Pradesh</p>
-                <p class="price"  data-aos="fade-left" data-aos-duration="3000" data-aos-delay="900">Price: ₹4500</p>
-                <a href="#" class="book-flight"  data-aos="fade-up" data-aos-duration="3000" data-aos-delay="2000">Book Flight</a>
-              </div>
-            </div>
-          </div>
-      
-          <!-- Slide 7 -->
-          <div class="swiper-slide">
-            <div class="card">
-              <img src="https://images-cf.ixigo.workers.dev/v2/images_by_id/503b2a83e4b032e338f11c25.jpg?cityName=Jabalpur" alt="" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="1200">
-              <div class="card-details">
-                <p class="place-name"  data-aos="fade-right" data-aos-duration="3000" data-aos-delay="900">Jabalpur, Madhya Pradesh</p>
-                <p class="price"  data-aos="fade-left" data-aos-duration="3000" data-aos-delay="900">Price: ₹6000</p>
-                <a href="#" class="book-flight"  data-aos="fade-up" data-aos-duration="3000" data-aos-delay="2000">Book Flight</a>
-              </div>
-            </div>
-          </div>
-      
-          <!-- Slide 8 -->
-          <div class="swiper-slide">
-            <div class="card">
-              <img src="https://images-cf.ixigo.workers.dev/v2/images_by_id/503b2a81e4b032e338f117c9.jpg?cityName=Jodhpur" alt="" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="1200">
-              <div class="card-details">
-                <p class="place-name"  data-aos="fade-right" data-aos-duration="3000" data-aos-delay="900">Jodhpur, Rajasthan</p>
-                <p class="price"  data-aos="fade-left" data-aos-duration="3000" data-aos-delay="900">Price: ₹7000</p>
-                <a href="#" class="book-flight"  data-aos="fade-up" data-aos-duration="3000" data-aos-delay="2000">Book Flight</a>
-              </div>
-            </div>
-          </div>
-      
-        </div>
-      
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </div>
-  </section>
-  
-
-<!-- ---------flight routes code------ -->
-<section id="thirdpage"><br>
+<section id="thirdpage">
     <h1>Popular Flight Routes</h1>
-    
-   <div id="routes">
+    <div id="routes">
        <div class="flight-routes">
        <div class="abc">
          <img src="./mumbai.jpeg" alt="">
@@ -395,22 +269,24 @@
       </h4>
     </div>
     </div>
-</div>
- </section>
+ </div>
+</section>
+<br><br><br>
 
      <!-- Booking Form Section -->
- <section id="bookingform">
+<section id="bookingform">
   <div class="container">
+    
       <h1>Flight Booking Form</h1>
+      
       <form action="/submit-booking" method="POST">
           <label for="first-name">First Name</label>
           <input type="text" id="first-name" name="first-name" required>
 
-          <label for="last-name">Last Name</label>
-          <input type="text" id="last-name" name="last-name" required>
+          <label for="age">Age</label>
+          <input type="number" id="age" name="last-name" required>
 
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
+          
 
           <label for="phone">Phone Number</label>
           <input type="tel" id="phone" name="phone" required>
@@ -443,50 +319,57 @@
           <button type="submit">Book Flight</button>
       </form>
   </div>
+</section>
 
-
+<section id="faq" data-aos-offset="500">
   <div class="container faq-container">
       <h1>Frequently Asked Questions</h1>
 
-      <div class="faq-item" style="background-image: url('images/takeoff.jpg');">
+      <div class="faq-item" style="background-image: url('images/takeoff.jpg');" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="800">
           <h2>1. How do I book a flight?</h2>
           <p>To book a flight, visit our website or mobile app, enter your departure and arrival cities, select your travel dates, and choose from the available flights. Follow the prompts to complete your booking.</p>
       </div>
 
-      <div class="faq-item" style="background-image: url('images/payment.jpg');">
+      <div class="faq-item" style="background-image: url('images/payment.jpg');" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="800">
           <h2>2. What payment methods do you accept?</h2>
           <p>We accept various payment methods, including credit/debit cards, PayPal, and other digital wallets. Please check our payment page for a complete list.</p>
       </div>
 
-      <div class="faq-item" style="background-image: url('images/change_cancel.jpg');">
+      <div class="faq-item" style="background-image: url('images/change_cancel.jpg');" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="800">
           <h2>3. Can I change or cancel my flight?</h2>
           <p>Yes, you can change or cancel your flight, but fees may apply depending on the airline's policy. Please refer to your booking confirmation for specific details.</p>
       </div>
 
-      <div class="faq-item" style="background-image: url('images/checkin.jpg');">
+      <div class="faq-item" style="background-image: url('images/checkin.jpg');" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800">
           <h2>4. How do I check in for my flight?</h2>
           <p>You can check in online through our website or the airline's app, or you can check in at the airport. Online check-in usually opens 24-48 hours before your flight.</p>
       </div>
 
-      <div class="faq-item" style="background-image: url('images/delayed.jpg');">
+      <div class="faq-item" style="background-image: url('images/delayed.jpg');" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800">
           <h2>5. What should I do if my flight is delayed or canceled?</h2>
           <p>If your flight is delayed or canceled, please check your email or the airline's website for updates. You can also contact our customer service for assistance.</p>
       </div>
 
-      <div class="faq-item" style="background-image: url('images/baggage.jpg');">
+      <div class="faq-item" style="background-image: url('images/baggage.jpg');" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800">
           <h2>6. Are there any baggage fees?</h2>
           <p>Baggage fees vary by airline and ticket type. Please check the airline's baggage policy for specific information regarding carry-on and checked luggage.</p>
       </div>
 
-      <div class="faq-item" style="background-image: url('images/support.jpg');">
+      <div class="faq-item" style="background-image: url('images/support.jpg');" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="800">
           <h2>7. How can I contact customer support?</h2>
           <p>You can reach our customer support team via phone, email, or live chat on our website. Our representatives are available 24/7 to assist you.</p>
       </div>
 
-      <div class="faq-item" style="background-image: url('images/insurance.jpg');">
+      <div class="faq-item" style="background-image: url('images/insurance.jpg');" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="800">
           <h2>8. Do you offer travel insurance?</h2>
           <p>Yes, we offer travel insurance options during the booking process. It's recommended to protect your trip against unforeseen circumstances.</p>
       </div>
+
+      <div class="faq-item" style="background-image: url('images/insurance.jpg');" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="800">
+        <h2>9. Do you offer travel insurance?</h2>
+        <p>Yes, we offer travel insurance options during the booking process. It's recommended to protect your trip against unforeseen circumstances.</p>
+    </div>
+
   </div>
 </section>
 
@@ -521,6 +404,10 @@
  
  
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
