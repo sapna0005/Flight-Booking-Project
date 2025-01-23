@@ -272,30 +272,86 @@
  </div>
 </section>
 <br><br><br>
-
+<section class="flight-section">
+  <h2>Popular Flights</h2>
+  <div class="slider-container">
+    <div class="cards-container" id="slider">
+      <div class="card">
+        <img src="/jaipurimage.jpeg" alt="City Image">
+        <h3>Jaipur</h3>
+        <p>Rs:3000</p>
+        <button>Book Flight</button>
+      </div>
+      <div class="card">
+        <img src="/mumbai.jpeg" alt="City Image">
+        <h3>Mumbai</h3>
+        <p>Rs:4000</p>
+        <button>Book Flight</button>
+      </div>
+      <div class="card">
+        <img src="/delhi.jpeg" alt="City Image">
+        <h3>Delhi</h3>
+        <p>Rs:4000</p>
+        <button>Book Flight</button>
+      </div>
+      <div class="card">
+        <img src="/hyderabad.jpeg" alt="City Image">
+        <h3>Hyderabad</h3>
+        <p>Rs:4500</p>
+        <button>Book Flight</button>
+      </div>
+      <div class="card">
+        <img src="/banglorenewimage.jpg" alt="City Image">
+        <h3>Bengaluru</h3>
+        <p>Rs:5000</p>
+        <button>Book Flight</button>
+      </div>
+      <div class="card">
+        <img src="/varanasi.jpg" alt="City Image">
+        <h3>Varanasi</h3>
+        <p>Rs:3500</p>
+        <button>Book Flight</button>
+      </div>
+      <div class="card">
+        <img src="/pune.jpg" alt="City Image">
+        <h3>Pune</h3>
+        <p>Rs:4000</p>
+        <button>Book Flight</button>
+      </div>
+      
+      <div class="card">
+        <img src="/indore.jpg" alt="City Image">
+        <h3>Indore</h3>
+        <p>Rs:2500</p>
+        <button>Book Flight</button>
+      </div>
+    </div>
+  
+  </div>
+</section>
      <!-- Booking Form Section -->
 <section id="bookingform">
-  <div class="container">
+  
     
       <h1>Flight Booking Form</h1>
       
-      <form action="/submit-booking" method="POST">
+      <form>
           <label for="first-name">First Name</label>
-          <input type="text" id="first-name" name="first-name" required>
+          <input type="text" id="first-name" name="first-name" required placeholder="Enter your Name">
 
           <label for="age">Age</label>
-          <input type="number" id="age" name="last-name" required>
+          <input type="number" id="age" name="last-name" required placeholder="Enter your Age">
 
           
 
           <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="phone" required>
+          <input type="tel" id="phone" name="phone" required placeholder="Enter your Mobile">
 
           <label for="departure-city">Departure City</label>
-          <input type="text" id="departure-city" name="departure-city" required>
+          <input type="text" id="departure-city" name="departure-city" required placeholder="Enter your City">
 
           <label for="destination-city">Destination City</label>
-          <input type="text" id="destination-city" name="destination-city" required>
+          <input type="text" id="destination-city" name="destination-city" required placeholder="Enter your City">
 
           <label for="departure-date">Departure Date</label>
           <input type="date" id="departure-date" name="departure-date" required>
@@ -304,21 +360,21 @@
           <input type="date" id="return-date" name="return-date">
 
           <label for="class">Class</label>
-          <select id="class" name="class" required>
+          <select id="class" name="class" required placeholder="Enter your Class">
               <option value="economy">Economy</option>
               <option value="business">Business</option>
               <option value="first">First Class</option>
           </select>
 
           <label for="adults">Number of Adults</label>
-          <input type="number" id="adults" name="adults" min="1" required>
+          <input type="number" id="adults" name="adults" min="1" required placeholder="Enter Number of Passengers">
 
           <label for="children">Number of Children</label>
-          <input type="number" id="children" name="children" min="0">
+          <input type="number" id="children" name="children" min="0" placeholder="Enter Number of Children">
 
           <button type="submit">Book Flight</button>
       </form>
-  </div>
+ 
 </section>
 
 <section id="faq" data-aos-offset="500">
