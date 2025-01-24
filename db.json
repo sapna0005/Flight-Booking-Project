@@ -1,0 +1,16 @@
+{
+  "flight": [
+    {
+      "name": "Sid",
+      "age": "34",
+      "number": "353646466",
+      "depcity": "bhopal",
+      "descity": "hdvfjdfd",
+      "depdate": "2025-01-25",
+      "class": "business",
+      "passengers": "5",
+      "price": "250",
+      "id": "24eb"
+    }
+  ]
+}

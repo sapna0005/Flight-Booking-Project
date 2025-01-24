@@ -6,7 +6,7 @@
 body{
     height: 100vh;
     width: 100%;
-    background-image: url('https://images.pexels.com/photos/1816602/pexels-photo-1816602.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-image: url('./Image/Flight-3.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,21 +29,25 @@ body{
     font-size: 3rem;
     color:orangered;
 }
-
 form{
-    background-color: rgba(0, 0, 0, 0.4);
+    
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 8px; 
     position: absolute;
-    right: 10%;
-    bottom: 40%;
-    
+    right: 15%;
+    top: 20%;
+    height: 350px;
+    width: 300px;
 }
 p{
     color: white;
-    font-size: 20px;
-    text-decoration:underline;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px black;
+}
+label{
+    display: flex;
+    padding: 5px;
 }
 
 input[type="text"],  
@@ -58,7 +62,7 @@ input[type="password"] {
 input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background:linear-gradient(to right, rgb(212, 127, 42), rgb(211, 176, 110));
+    background:linear-gradient(to right,#003285,#B1B2FF, #AAC4FF,#B1B2FF);
     color: white;
     border: none;
     border-radius: 4px;
@@ -68,3 +72,15 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background: linear-gradient(to right, rgb(211, 176, 110), rgb(212, 127, 42));
 }
+
+.signup-link {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  .signup-link a {
+    color: white;
+    text-decoration: none;
+  }
+  .signup-link a:hover {
+    text-decoration: underline;
+  }

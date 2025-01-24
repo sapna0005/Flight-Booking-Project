@@ -2,20 +2,16 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+
 }
 body {
     height: 100vh;
     width: 100%;
-    background-image: url('./pexels-freestockpro-1004584.jpg');
+    background-image: url('./Image/pexels-freestockpro-1004584.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
     font-family: Arial, sans-serif;
-
 }
 form{
     border-radius: 10px;
@@ -24,13 +20,22 @@ form{
     box-shadow: 0 4px 8px; 
     position: absolute;
     left: 60%;
+    top: 16%;
     
 }
 h1 .welcome{
-    color: rgb(110, 23, 98);
+    color: #2A629A;
+    
+  
 }
 h1 .on{
-  color: rgb(2, 84, 90);
+  color:#003285;
+  
+}
+label{
+    display: flex;
+    padding: 5px;
+    
 }
 input[type="text"], 
 input[type="number"], 
@@ -45,7 +50,7 @@ input[type="password"] {
 input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background:linear-gradient(to right,rgb(12, 92, 12),rgb(98, 218, 98));
+    background:linear-gradient(to right,#003285,#B1B2FF, #AAC4FF,#B1B2FF);
     color: white;
     border: none;
     border-radius: 4px;

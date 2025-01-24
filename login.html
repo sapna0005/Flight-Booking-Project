@@ -10,16 +10,29 @@
     <div id="login-page">
     The Sky
     <h1 id="display"></h1>
-     
     </div>
+    
     <form>
-    <p>Login Your Account</p>
-     Name <input type="text" id="logname"> <br><br>
-     Password <input type="password" id="logpass"><br><br>
+    <p>Login </p>
+     <br>
+    <!---- Name ----->
+     <label for="logname">Name</label>
+     <input type="text" id="logname"> <br>
+
+     <!---- Password  ----->
+     <label for="logpass">Password </label>
+     <input type="password" id="logpass"><br><br>
+     
+     <!-------- Login Button --------->
      <input type="submit" value="Login" onclick="return login()">
+      <br>
+     <div class="signup-link">
+        Don't have an account? <a href="signup.html">Sign up</a>
+      </div>
     </form>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="type.js"></script>
     <script src="local.js"></script>
 </body>
 </html>
