@@ -312,7 +312,7 @@ select, input[type="text"], input[type="date"]{
         font-size: 12px;
         padding: 8px;
        position: absolute;
-       top: -50%;
+       top: -80%;
     }
 }
 
