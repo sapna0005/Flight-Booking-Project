@@ -215,13 +215,13 @@ body, html {
   text-decoration: none;
 }
 /* Input Bar */
+/* Base Styles */
 .flight-form {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
   flex-wrap: wrap;
-  gap: 10px;
-  border-radius: 15px;
-  padding: 10px;
-  background-color: whitesmoke;
 }
 
 .flight-form .form1,
@@ -229,108 +229,95 @@ body, html {
 .flight-form .form3,
 .flight-form .form4,
 .flight-form .form5 {
-  flex: 1;
-  min-width: 120px;
-}
-
-label {
-  font-weight: lighter;
   display: flex;
   flex-direction: column;
-  margin: 5px 0;
+  gap: 5px;
 }
-
-select, input[type="text"], input[type="date"]{
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-size: 12px;
-}
-
-
 
 .swap-icon {
-  position: absolute;
-  left: 20.5%;
-  top: 59%;  
-  font-size: 13px;
+  font-size: 15px;
+  padding: 10px;
   cursor: pointer;
-  border: 1px solid black;
-  border-radius: 50%;
-  padding: 5px;
-  background-color: white;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  color: #333;
 }
 
-.swap-icon:hover {
-  background-color: #B1B2FF;
-  transform: rotate(180deg);
-}
-
-#search {
-  margin-top: 20px;
-  padding: 10px 15px;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  background-color: #B1B2FF;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  transition: background-color 0.3s ease;
-}
-#search:hover {
-  background-color: #959DFF;
-}
-
-@media (max-width: 768px) {
+/* For small devices (max-width: 600px) */
+@media (max-width: 600px) {
   .flight-form {
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
   }
 
-  .flight-form .form1,
-  .flight-form .form2,
-  .flight-form .form3,
-  .flight-form .form4,
-  .flight-form .form5 {
-    min-width: 100%;
-    max-width: 100%;
+  .form1,
+  .form2,
+  .form3,
+  .form4,
+  .form5 {
+      width: 100%;
   }
 
   .swap-icon {
-    font-size: 15px;
-    padding: 10px;
+      font-size: 20px;
+      padding: 5px;
+      color: #007bff;
+      align-self: center;
+      margin: -10px 0; /* Adjust spacing as needed */
+  }
+
+  .form1, .form2 {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      position: relative;
+  }
 }
 
-/* For mobile devices (max-width: 600px) */
-@media (max-width: 600px) {
-    .swap-icon {
-        font-size: 12px;
-        padding: 8px;
-       position: absolute;
-       top: -150%;
-    }
-}
-
-/* For tablets (min-width: 601px and max-width: 1024px) */
+/* For tablets (601px to 1024px) */
 @media (min-width: 601px) and (max-width: 1024px) {
-    .swap-icon {
-        font-size: 14px;
-        padding: 9px;
-    }
+  .flight-form {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+  }
+
+  .form1,
+  .form2,
+  .form3,
+  .form4,
+  .form5 {
+      width: 45%;
+  }
+
+  .swap-icon {
+      font-size: 18px;
+      align-self: center;
+      margin: 0 15px;
+  }
 }
 
 /* For desktops (min-width: 1025px) */
 @media (min-width: 1025px) {
-    .swap-icon {
-        font-size: 15px;
-        padding: 10px;
-    }
+  .flight-form {
+      justify-content: space-between;
+      gap: 20px;
+  }
+
+  .form1,
+  .form2,
+  .form3,
+  .form4,
+  .form5 {
+      width: auto;
+  }
+
+  .swap-icon {
+      font-size: 15px;
+      align-self: center;
+      margin: 0;
+  }
 }
+
 
 
   #search {
@@ -339,7 +326,7 @@ select, input[type="text"], input[type="date"]{
     padding: 12px 20px;
     font-size: 16px;
   }
-}
+
 
 @media (max-width: 480px) {
   .flight-form .form1,
