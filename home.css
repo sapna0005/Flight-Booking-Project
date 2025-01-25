@@ -311,8 +311,8 @@ select, input[type="text"], input[type="date"]{
     .swap-icon {
         font-size: 12px;
         padding: 8px;
-       position: relative;
-       top: -80%;
+       position: absolute;
+       top: -150%;
     }
 }
 
