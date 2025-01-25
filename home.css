@@ -304,8 +304,34 @@ select, input[type="text"], input[type="date"]{
   .swap-icon {
     font-size: 15px;
     padding: 10px;
-   /* Adjust the position for smaller screens */
-  }
+}
+
+/* For mobile devices (max-width: 600px) */
+@media (max-width: 600px) {
+    .swap-icon {
+        font-size: 12px;
+        padding: 8px;
+       position: absolute;
+       top: -30%;
+    }
+}
+
+/* For tablets (min-width: 601px and max-width: 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .swap-icon {
+        font-size: 14px;
+        padding: 9px;
+    }
+}
+
+/* For desktops (min-width: 1025px) */
+@media (min-width: 1025px) {
+    .swap-icon {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
 
   #search {
     width: 100%;
@@ -324,12 +350,7 @@ select, input[type="text"], input[type="date"]{
     width: 100%;
   }
 
-  .swap-icon {
-    font-size: 15px;
-    padding: 10px;
-   margin-top: 5%;
-   
-  }
+  
 
   #search {
     padding: 15px 20px;
