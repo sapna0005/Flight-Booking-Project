@@ -22,40 +22,41 @@
 <body>
   <!-- --------------------Nav-Bar---------------------------------------- -->
   <div id="login-page">
-   <div class="logo">
-    <img src="https://cdn-icons-gif.flaticon.com/11614/11614833.gif" alt="">
-    <h3 id="para" data-aos="flip-right" data-aos-duration="3000" data-aos-delay="200">DreamAero
-    </h3>
-  </div>
+    <div class="logo">
+      <img src="https://cdn-icons-gif.flaticon.com/11614/11614833.gif" alt="">
+      <h3 id="para" data-aos="flip-right" data-aos-duration="3000" data-aos-delay="200">DreamAero</h3>
+    </div>
     <nav>
-      <ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul id="nav-menu">
         <li data-aos="flip-down" data-aos-duration="3000" data-aos-delay="600"><a href="#"><i
               class="fa-solid fa-plane-up"></i> My Trips</a></li>
         <li data-aos="flip-down" data-aos-duration="3000" data-aos-delay="600"><a href="#"><i
               class="fa-solid fa-circle-question"></i> Help</a></li>
+        <!-- Login and Sign Up inside the hamburger -->
+        <li data-aos="flip-left" data-aos-duration="3000" data-aos-delay="800"><a href="signup.html" class="btn-signup"><i
+              class="fa-solid fa-user"></i> Sign Up</a></li>
+        <li data-aos="flip-left" data-aos-duration="3000" data-aos-delay="800"><a href="login.html" class="btn-login"><i
+              class="fa-solid fa-user"></i> Login</a></li>
       </ul>
     </nav>
-    <div class="login">
-      <p data-aos="flip-left" data-aos-duration="3000" data-aos-delay="800"><a href="signup.html"><i
-            class="fa-solid fa-user"></i> Sign Up </a></p>
-      <h4 data-aos="flip-left" data-aos-duration="3000" data-aos-delay="800"><a href="login.html"><i
-            class="fa-solid fa-user"></i> Login</a></h4>
-    </div>
   </div>
   <hr>
- 
-
- 
-    <div id="clockk"></div>
+  
+  <div id="clockk"></div>
   
   <!-- -----------------------------Home-Page---------------------------------------------- -->
 
   <section id="home-page">
     <div id="ticket-search">
       <div id="trip">
-        <p id="trip1"><a href="#">One Way</a></p>
-        <p id="trip1"><a href="#">Round Trip</a></p>
-        <p id="trip1"><a href="#">Multicity</a></p>
+        <p class="trip-item"><a href="#">One Way</a></p>
+        <p class="trip-item"><a href="#">Round Trip</a></p>
+        <p class="trip-item"><a href="#">Multicity</a></p>
       </div>
       
       <!-- Input bar -->
@@ -66,33 +67,37 @@
                 <option value="NYC">New York</option>
                 <option value="LAX">Los Angeles</option>
                 <option value="CHI">Chicago</option>
-                <!-- More cities can be added here -->
-            </select>
+             </select>
         </div>
-        <div class="form2">
-            <i class="fas fa-exchange-alt swap-icon"></i>
+
+            <div class="form2">
             <label for="to-city">To:</label>
             <select id="to-city">
                 <option value="LAX">Los Angeles</option>
                 <option value="NYC">New York</option>
                 <option value="CHI">Chicago</option>
-                <!-- More cities can be added here -->
-            </select>
+             </select>
         </div>
+       
+        <i class="fas fa-exchange-alt swap-icon" id="swap-cities"></i>
+
         <div class="form3">
             <label for="departure-date">Departure:</label>
             <input type="date" id="departure-date" placeholder="Select Date & Time">
         </div>
+
         <div class="form4">
           <label for="return">Return</label>
             <input type="date" id="return">
         </div>
+
         <div class="form5">
             <label for="travellers">Travellers:</label>
             <input type="text" id="travellers" placeholder="Select Travellers">
         </div>
+
         <div>
-         <input type="search" value="SEARCH" id="search">
+         <input type="submit" value="SEARCH" id="search">
         </div>
     </div>
   </div>
@@ -136,7 +141,7 @@
     <div id="routes">
        <div class="flight-routes">
        <div class="abc">
-         <img src="./mumbai.jpeg" alt="">
+         <img src="./Image/mumbai.jpeg" alt="">
        </div>
        <div class="xyz">
         <p>Mumbai Flights</p>
@@ -144,7 +149,7 @@
           <a href="#">Goa</a>
           <a href="#">Delhi</a>
           <a href="#">Banglore</a>
-          <a href="#">Ahmedabad</a> 
+          
        </h4>
      </div>
    </div>
@@ -152,14 +157,14 @@
 
     <div class="flight-routes">
       <div class="abc">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw8uVakoB9lg3uasel9HrkGXjYlijBylQOpQ&s" alt="">
+        <img src="./Image/delhi.jpeg" alt="">
       </div>
       <div class="xyz">
        <p>Delhi Flights</p>
        <h4>To:
          <a href="#">Mumbai</a>
          <a href="#">Goa</a>
-         <a href="#">Banglore</a>
+        
          <a href="#">Pune</a> 
       </h4>
     </div>
@@ -167,7 +172,7 @@
 
     <div class="flight-routes">
       <div class="abc">
-        <img src="https://mygate.com/wp-content/uploads/2024/03/84.png" alt="">
+        <img src="./Image/Howrah Bridge.jpg" alt="">
       </div>
       <div class="xyz">
        <p>Kolkata Flights</p>
@@ -175,19 +180,19 @@
          <a href="#">Mumbai</a>
          <a href="#">Delhi</a>
          <a href="#">Banglore</a>
-         <a href="#">Bagdogra</a> 
+         
       </h4>
     </div>
    </div>
 
     <div class="flight-routes">
       <div class="abc">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdmwTIR3hVpsDP05CgmjShAQKZqG7rflzpgg&s" alt="">
+        <img src="./Image/chennai temple.jpg" alt="">
       </div>
       <div class="xyz">
        <p>Chennai Flights</p>
        <h4>To:
-         <a href="#">Mumbai</a>
+         
          <a href="#">Delhi</a>
          <a href="#">Madurai</a>
          <a href="#">Coimbatore</a> 
@@ -197,14 +202,13 @@
 
     <div class="flight-routes">
       <div class="abc">
-        <img src="https://images.ixigo.com/image/upload/c_fill,w_100,h_100,q_100/home/a5d4c86e624150e31f81469824653223-rihzk.webp" alt="">
+        <img src="./Image/hyderabad.jpeg" alt="">
       </div>
       <div class="xyz">
        <p>Hyderabad Flights</p>
        <h4>To:
          <a href="#">Mumbai</a>
          <a href="#">Goa</a>
-         <a href="#">Banglore</a>
          <a href="#">Delhi</a> 
       </h4>
     </div>
@@ -212,12 +216,11 @@
 
     <div class="flight-routes">
       <div class="abc">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRebrDcHC878mSLo_EpT4G7JHE-O6GLjiLE3g&s" alt="">
+        <img src="./Image/Ahmedabad-jpg.webp" alt="">
       </div>
       <div class="xyz">
        <p>Ahmedabad Flights</p>
        <h4>To:
-         <a href="#">Mumbai</a>
          <a href="#">Delhi</a>
          <a href="#">Banglore</a>
          <a href="#">Goa</a> 
@@ -227,7 +230,7 @@
 
     <div class="flight-routes">
       <div class="abc">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmuatSPq_REI7wApSmlaJjJM26F5SaLRiRLw&s" alt="">
+        <img src="./Image/banglore.jpeg" alt="">
       </div>
       <div class="xyz">
        <p>Banglore Flights</p>
@@ -235,7 +238,6 @@
          <a href="#">Mumbai</a>
          <a href="#">Delhi</a>
          <a href="#">Goa</a>
-         <a href="#">Hyderabad</a> 
       </h4>
     </div>
     </div>
@@ -249,8 +251,7 @@
        <h4>To:
          <a href="#">Goa</a>
          <a href="#">Delhi</a>
-         <a href="#">Banglore</a>
-         <a href="#">Nagpur</a> 
+         <a href="#">Banglore</a> 
       </h4>
     </div>
     </div>
@@ -264,7 +265,6 @@
        <h4>To:
          <a href="#">Mumbai</a>
          <a href="#">Delhi</a>
-         <a href="#">Banglore</a>
          <a href="#">Hyderabad</a> 
       </h4>
     </div>
@@ -272,8 +272,19 @@
  </div>
 </section>
 <br><br><br>
+
+<!-- popular flights section -->
 <section class="flight-section">
-  <h2>Popular Flights</h2>
+  <div id="listcities">
+  <h1>Cheapest Flights from </h1>
+    <select id="flight-city">
+      <option value="NYC">New York</option>
+      <option value="LAX">Los Angeles</option>
+      <option value="CHI">Chicago</option>
+      <!-- More cities can be added here -->
+  </select>
+</div>
+  
   <div class="slider-container">
     <div class="cards-container" id="slider">
       <div class="card">
@@ -332,11 +343,8 @@
 
 <!---------------------- Booking Form Section --------------------->
 <section id="bookingform">
-  
-    
-      <h1>Flight Booking Form</h1>
-      
-      <form>
+   <h1>Flight Booking Form</h1>
+      <form id="booking-form1">
           <label for="first-name"> Name</label>
           <input type="text" id="first-name" name="first-name" required placeholder="Enter your Name">
 
@@ -369,9 +377,9 @@
           <input type="number" name="price" id="price">
 
           <input type="submit" value="Book Flight" onclick="return insertt()" id="btn1">
-      </form>
- </section>
-
+    </form>
+  </section>
+<br><br><br>
 
 
  <!------------------ FAQ SECTION ------------------------------>

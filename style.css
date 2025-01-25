@@ -1,4 +1,4 @@
-*{
+/* *{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
@@ -65,4 +65,165 @@ input[type="submit"]:hover{
 
 
 
+ */
 
+ /* From Uiverse.io by ammarsaa */ 
+
+ body {
+    height: 100vh;
+    width: 100%;
+    background-image: url('./Image/pexels-freestockpro-1004584.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    left: 60%;
+    top: 3%;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #333;
+    
+    
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: #00bfff;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .title::before,
+  .title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #00bfff;
+  }
+  
+  .message, 
+  .signin {
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.811);
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+ 
+  
+  .signin a {
+    color: #00bfff;
+    text-decoration: none;
+  }
+  
+ 
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    background-color: #333;
+    color: #fff;
+    width: 90%;
+    padding: 12px 10px 05px 20px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    font-size: 0.9em;
+    
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 25px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,
+  .form label .input:valid + span {
+    color: #00bfff;
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .input {
+    font-size: medium;
+  }
+  
+  .submit input {
+    border: none;
+    outline: none;
+    padding: 10px;
+   
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #00bfff;
+    width: 100%;
+    cursor: pointer;
+
+   
+  }
+  .submit  {
+    border: none;
+    outline: none;
+   
+   border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #00bfff;
+    width: 100%;
+    cursor: pointer;
+  
+    
+  }
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }

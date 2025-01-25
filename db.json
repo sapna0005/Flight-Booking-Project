@@ -7,10 +7,22 @@
       "depcity": "bhopal",
       "descity": "hdvfjdfd",
       "depdate": "2025-01-25",
-      "class": "business",
+      "class": "economy",
       "passengers": "5",
       "price": "250",
       "id": "24eb"
+    },
+    {
+      "name": "anuj",
+      "age": "23",
+      "number": "8899776654",
+      "depcity": "bhopal",
+      "descity": "Bhopal",
+      "depdate": "2025-01-26",
+      "class": "economy",
+      "passengers": "3",
+      "price": "5000",
+      "id": "6750"
     }
   ]
 }

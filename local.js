@@ -82,7 +82,7 @@ let login=()=>{
    let localpass=localStorage.getItem("pass")
   
    if (loginname==localname && loginpass==localpass) {
-    location.href="home.html";
+    location.href="index.html";
    }
    else
    {
@@ -147,6 +147,11 @@ var swiper1 = new Swiper(".mySwiper", {
       },
   });
   
+
+  function toggleMenu() {
+    const menu = document.getElementById('nav-menu');
+    menu.classList.toggle('active');
+}
 
 
 

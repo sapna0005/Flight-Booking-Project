@@ -9,38 +9,72 @@
 </head>
 <body>
 
-  <form>
+  <!-- <form> -->
     <!-- h1 tag -->
-  <marquee behavior="scroll" direction="left">
+  <!-- <marquee behavior="scroll" direction="left">
   <h1>
     <span class="welcome">Welcome</span> 
     <span class="on">Onboard</span>
   </h1>
  </marquee>
-  <br><br>
+  <br><br> -->
 
   <!-- Name -->
-  <p id="errname"></p>
+  <!-- <p id="errname"></p>
   <label for="name">Name </label>
-  <input type="text" id="name"> <br>
+  <input type="text" id="name"> <br> -->
 
   <!-- Email -->
-  <p id="erremail"></p>
+  <!-- <p id="erremail"></p>
    <label for="email">Email</label>
-  <input type="text" id="email"> <br>
+  <input type="text" id="email"> <br> -->
 
   <!-- Mobile -->
-  <p id="errmobile"></p>
+  <!-- <p id="errmobile"></p>
   <label for="mobile">Mobile</label>
-  <input type="number" id="mobile"> <br>
+  <input type="number" id="mobile"> <br> -->
 
   <!-- Password -->
-  <p id="errpass"></p>
+  <!-- <p id="errpass"></p>
   <label for="pass">Password</label>
-  <input type="password" id="pass"> <br><br>
+  <input type="password" id="pass"> <br><br> -->
   
   <!-- Signup button -->
-  <input type="submit" value="Sign up" onclick="return signup()">
+  <!-- <input type="submit" value="Sign up" onclick="return signup()">
+</form> -->
+
+<!-- From Uiverse.io by ammarsaa --> 
+<form class="form">
+  <p class="title">Signup </p>
+  <p class="message">Signup now and get full access to our website. </p>
+     
+      <label>
+        <p id="errname"></p>
+          <input class="input" type="text" id="name">
+          <span>Name</span>
+      </label>
+
+    <label>
+    <p id="erremail"></p>
+      <input class="input" type="email" id="email">
+      <span>Email</span>
+  </label> 
+
+  <label>
+    <p id="errmobile"></p>
+      <input class="input" type="number" id="mobile">
+      <span>Mobile</span>
+  </label> 
+
+      
+  <label>
+    <p id="errpass"></p>
+      <input class="input" type="password" id="pass">
+      <span>Password</span>
+  </label>
+ 
+  <button class="submit"> <input type="submit" value="Sign up" onclick="return signup()"></button>
+  <p class="signin">Already have an acount ? <a href="login.html">Login</a> </p>
 </form>
 
 
