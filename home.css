@@ -136,6 +136,56 @@ padding-top: 10px;
   background: linear-gradient(to right, rgb(12, 92, 12), rgb(98, 218, 98));
 }
 
+/* Responsive Design for 480px */
+@media (max-width: 480px) {
+  #login-page {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo img {
+    max-width: 35px; /* Smaller logo for smaller screens */
+    margin-right: 8px;
+  }
+
+  #para {
+    font-size: 18px; /* Smaller text size for the paragraph */
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    align-self: flex-end; /* Align hamburger menu to the right */
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #B1B2FF;
+    position: absolute;
+    top: 60px; /* Adjust dropdown position for smaller screens */
+    right: 10px;
+    width: 180px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    font-size: 14px; /* Smaller font size for links */
+    padding: 5px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+}
+
 
 /* ----------Digital Clock-------------- */
 
@@ -477,12 +527,13 @@ h1 {
     
       .swiper-slide {
         height: auto; 
-        
+        display: flex;
+       justify-content: center;
+       align-items: center;
       }
-    
-      .swiper-slide img {
+     .swiper-slide img {
         height: auto; 
-        width: 90%; 
+        width: 100%; 
         max-width: 100%; 
         object-fit: cover; 
         border-radius: 15px;
