@@ -5,30 +5,45 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-   height:100vh;
+  height:100vh;
+  background:linear-gradient(to left, #EEF1FF, #D2DAFF, #AAC4FF, #B1B2FF,#9799f2);
+  margin: 0;
+  padding: 0;
 }
 #heading{
-    text-align: center;
-    margin-top: 40px;
+   text-align: center;
+   margin-top: 40px;
+   font-size: 25px;
+ 
 }
 h1{
-    color: #000957;
+   color: #000957;
+   font-family: "Lobster", serif;
+   font-weight: 400;
+   letter-spacing: 2px;
+
 }
 span{
-    color: #FF8383;
+   color: #FF8383;
+   font-family: "Lobster", serif;
+   font-weight: 400;
+   letter-spacing: 2px;
 }
 
 fieldset{
-  height: auto;
-  border-radius: 25px;
-  position: absolute;
-  top: 20%;
-  left: 4%;
+  width: 80%;
+ height: auto;
+ border-radius: 25px;
+ position: absolute;
+ top: 20%;
+ left: 3%;
 }
 legend{
 text-align:center;
 font-size: 2rem;
-    
+font-style: oblique;
+font-family: "Macondo", serif;
+   
 }
 #search{
 width: 25%;
@@ -38,31 +53,45 @@ border-radius: 5px;
 border: 1px solid gray;
 outline: none;
 }
-#search::before {
-  content: '\f002'; /* Unicode for Font Awesome search icon */
-  font-family: 'Font Awesome 5 Free'; /* Ensure correct font family */
-  font-weight: 900; /* Make icon bold */
-  position: absolute;
-  margin-left: 10px;
-  margin-top: -2px;
-}
 
-div {
-  position: relative; /* To position the icon inside the input */
-}
-
-th, td {
-    border: 1px;
-    padding: 8px;
-    text-align: center;
-    font-size: 14px;
-}
 th {
-  color: black;
+ color: black;
+ text-align: center;
+ font-size: 14px;
 }
 td{
-    background:linear-gradient(to left, rgb(6, 135, 145),rgb(160, 226, 221));
-    color: white; 
+   background:linear-gradient(to left, #EEF1FF,#D2DAFF);
+   color: black; 
+   padding: 6px 12px;
+   text-align: center;
+   font-size: 12px;
+   border-radius: 4px;
+}
+
+#del{
+  background: none;
+  background-color: red;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s  ease;
+
+&:hover{
+   transform: scale(1.1);
+   box-shadow: 2px 2px 6px black;
+  }
+}
+
+#update{
+  background: none;
+  background-color: forestgreen;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s  ease;
+
+&:hover{
+   transform: scale(1.1);
+   box-shadow: 2px 2px 6px black;
+  }
 }
 
 form{
@@ -72,14 +101,14 @@ form{
     height:500px ;
     width: 350px;
     position: absolute;
-    left: 63%;
-    top: 7%;
-    padding: 10px;
+    left: 70%;
+    top: -5%;
+    padding: 7px;
 }
 
 h3{
     text-align: center;
-   color:rgb(17, 78, 191); 
+    color:rgb(17, 78, 191); 
 }
 label{
     color: white;

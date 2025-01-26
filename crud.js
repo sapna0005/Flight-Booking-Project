@@ -56,8 +56,8 @@ let fetchData = async () => {
               <td>${e.passengers}</td>
               <td>${e.price}</td>
 
-              <td onclick="deelete('${e.id}')">Delete</td>
-              <td onclick="updatee('${e.id}')">Update</td>
+              <td onclick="deelete('${e.id}')" id="del">Delete</td>
+              <td onclick="updatee('${e.id}')" id="update">Update</td>
           </tr>
       `
   });
