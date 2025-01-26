@@ -379,6 +379,7 @@ h1 {
   font-family: "Lobster", serif;
   font-weight: 400;
   letter-spacing: 2px;
+  margin: 0 10px;
 }
 
 .swiper {
@@ -401,6 +402,49 @@ h1 {
   object-fit: cover;
   border-radius: 15px;
   margin-left: 20px;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+  }
+
+  .swiper {
+    height: 250px;
+    padding-top: 20px;
+  }
+
+  .swiper-slide {
+    height: 180px;
+  }
+
+  .swiper-slide img {
+    height: 160px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  .swiper {
+    height: 200px;
+    padding-top: 15px;
+  }
+
+  .swiper-slide {
+    height: 150px;
+  }
+
+  .swiper-slide img {
+    height: 130px;
+    margin-left: 5px;
+  }
 }
 
 /*------------- Flight Routes ---------------*/
