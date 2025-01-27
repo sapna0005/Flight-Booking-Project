@@ -239,7 +239,9 @@ body{
   }
 
   @media (max-width: 480px) {
-    
+    body {
+      background-size: cover;
+    }
   
     .container {
       max-width: 100%; 

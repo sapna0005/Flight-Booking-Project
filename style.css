@@ -229,13 +229,78 @@ input[type="submit"]:hover{
   }
 
   @media (max-width: 480px) {
+    body {
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+    }
+  
     .form {
-      max-width: 70%; 
-      padding: 15px; /* Increase padding for a better look */
-      left: 60%; /* Center the form horizontally */
-      top: 10%; /* Adjust vertical position */
-      transform: translateX(-50%); /* Ensure it's centered */
-      border-radius: 15px; /* Slightly reduce the border radius */
-      gap: 15px; /* Increase gap between elements for better spacing */
+      max-width: 80%; 
+      padding: 15px; 
+      left: 60%; 
+      top: 5%;
+      transform: translateX(-50%); 
+      border-radius: 15px;
+      border: 1px solid #333;
+      gap: 12px;
+    }
+  
+    .title {
+      font-size: 20px; 
+      padding-left: 15px; 
+      letter-spacing: 0.5px;
+    }
+  
+    .message,
+    .signin {
+      font-size: 13px; 
+    }
+  
+    .signin {
+      text-align: center;
+    }
+  
+    .signin a {
+      font-size: 14px; 
+    }
+  
+    .form label .input {
+      padding: 10px 8px 5px 15px; 
+      font-size: 14px; 
+    }
+  
+    .form label .input + span {
+      font-size: 0.8em; 
+    }
+  
+    .form label .input:focus + span,
+    .form label .input:valid + span {
+      font-size: 0.7em; 
+    }
+  
+    .submit input,
+    .submit {
+      padding: 12px; 
+      font-size: 14px; 
+    }
+  
+    
+    body {
+      background-size: cover;
+    }
+  
+    
+    @keyframes pulse {
+      from {
+        transform: scale(0.8); 
+        opacity: 1;
+      }
+  
+      to {
+        transform: scale(1.5); 
+        opacity: 0;
+      }
     }
   }
+  
