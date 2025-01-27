@@ -138,10 +138,7 @@ padding-top: 10px;
 
 /* Responsive Design for 480px */
 @media (max-width: 480px) {
- 
-  
-
-  #para {
+    #para {
     font-size: 18px; 
   }
 
@@ -206,6 +203,7 @@ body, html {
   gap: 10px;
   padding: 30px;
   font-size: 14px;
+  
 }
 
 #trip .trip-item {
@@ -225,43 +223,70 @@ body, html {
   color: white;
   text-decoration: none;
 }
-/* Input Bar */
+
+/*--------------- Input Bar ---------------------*/
 /* Base Styles */
 .flight-form {
   display: flex;
   align-items: center;
   justify-content: space-between;
- 
   flex-wrap: wrap;
+  
 }
 
 .flight-form .form1,
 .flight-form .form2,
 .flight-form .form3,
 .flight-form .form4,
-.flight-form .form5 {
+.flight-form .form5,
+.flight-form .form6 {
   display: flex;
   flex-direction: column;
   width: 160px;
   gap:3px;
+  height: 50px;
   
 }
-
-input[type="text"],
-input[type="date"],
-input[type="submit"]
-{
-  width: 150px;
+#from-city ,#to-city{
+  width: 100%;
+  max-width: 100%;
+  padding: 5px;
+  
 }
-
+#return,#departure
+{
+  width: 100%;
+  max-width: 100%;
+  padding: 3px;
+  
+}
+#travellers{
+  width: 100%;
+  max-width: 100%;
+  padding: 4px;
+  
+ 
+}
 .swap-icon {
   font-size: 25px;
-
   cursor: pointer;
   color: #333;
- padding-top: 22px;
-
-
+  padding-top: 20px;
+}
+#search {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  margin-top: 12px;
+  background-color: #959DFF;
+  border-radius: 8px;
+  &:hover{
+    background-color: #B1B2FF;
+  }
 }
 
 /* For small devices (max-width: 600px) */
@@ -342,42 +367,23 @@ input[type="submit"]
   }
 }
 
-
-
-  #search {
-    width: 100%;
-    max-width: 100%;
-    padding: 10px 30px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 15px;
-    color: white;
-    background-color: #959DFF;
-
-    &:hover{
-      background-color: #B1B2FF;
-    }
-  }
-
-
 @media (max-width: 480px) {
   .flight-form .form1,
   .flight-form .form2,
   .flight-form .form3,
   .flight-form .form4,
-  .flight-form .form5 {
+  .flight-form .form5,
+  .flight-form .form6 {
     width: 100%;
   }
 
-  .swap-icon {
-    font-size: 15px;
+.swap-icon {
+font-size: 15px;
 padding: 0;
 background-color: white;
-    margin-top: 30px;
+margin-top: 30px;
 }
-  
-
-  #search {
+#search {
     padding: 8px 10px;
     font-size: 10px;
   }
@@ -776,12 +782,11 @@ button:hover {
 #bookingform {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #eef1ff, #d2daff, #aac4ff);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 120vh;
+    height: 140vh;
 }
 
 h1 {
@@ -792,45 +797,76 @@ h1 {
   letter-spacing: 2px;
   margin-bottom: 10px;
 }
-#first-name,#age,#phone,#departure-city,#destination-city,#departure-date,#choice, #passengers,#price{
-  padding:6px ;
-}
+
 #booking-form1 {
   width: 100%;
   max-width: 500px;
-  background: linear-gradient(to bottom, #ffffff, #eef1ff);
+  background: linear-gradient(to bottom, #ffffff, #eef1ff,#7091e6,#3d52a0);
   padding: 20px 30px;
   border: 1px;
   border-radius:10px;
   margin-bottom: 35px;
-  }
+}
+#booking-form1 label{
+ font-size: 14px;
+ padding-left: 5px;
+}
 
-
-label {
-  font-size: 14px;
+#booking-form1 input[type="text"],
+#booking-form1 input[type="number"],
+#booking-form1 input[type="tel"],
+#booking-form1 input[type="date"],
+#booking-form1 select{
+  
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px;
+  width: 100%;
+  padding:7px ;
+  margin-bottom: 10px;
+  margin-top: 8px;
   
 }
 
-input[type="text"],
-input[type="number"],
-input[type="tel"],
-input[type="date"],
-select,
-input[type="submit"]{
-  padding: 6px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  width: 100%;
-}
-
 #btn1 {
-  background:linear-gradient(to left, #EEF1FF, #D2DAFF, #AAC4FF, #B1B2FF,#9799f2);
+  background:linear-gradient(to left, #9799f2,#9799f2, #AAC4FF, #B1B2FF,#D2DAFF);
   color: white;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
   margin-top: 20px;
   padding: 8px;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  #bookingform {
+      height: auto; /* Adjust height for better scrolling on small screens */
+      padding: 10px;
+  }
+
+  #booking-form1 {
+      padding: 15px 20px; /* Reduce padding for smaller screens */
+  }
+
+  h1 {
+      font-size: 16px; /* Adjust heading size */
+      margin-bottom: 15px;
+  }
+
+  #booking-form1 input[type="text"],
+  #booking-form1 input[type="number"],
+  #booking-form1 input[type="tel"],
+  #booking-form1 input[type="date"],
+  #booking-form1 select {
+      font-size: 8px; /* Slightly increase font size for better readability */
+      padding: 4px; /* Increase input padding for easier touch interaction */
+  }
+
+  #btn1 {
+      font-size: 12px; /* Adjust button font size */
+      padding: 5px; /* Increase button padding for touch */
+  }
 }
 
 

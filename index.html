@@ -62,16 +62,18 @@
       <!-- Input bar -->
       <div class="flight-form">
         <div class="form1">
-            <label for="from-city">From:</label>
+            <label for="from-city">From</label>
             <select id="from-city">
                 <option value="NYC">New York</option>
                 <option value="LAX">Los Angeles</option>
                 <option value="CHI">Chicago</option>
              </select>
         </div>
+
         <i class="fas fa-exchange-alt swap-icon" id="swap-cities"></i>
+
             <div class="form2">
-            <label for="to-city">To:</label>
+            <label for="to-city">To</label>
             <select id="to-city">
                 <option value="LAX">Los Angeles</option>
                 <option value="NYC">New York</option>
@@ -79,11 +81,9 @@
              </select>
         </div>
        
-       
-
         <div class="form3">
-            <label for="departure-date">Departure:</label>
-            <input type="date" id="departure-date" placeholder="Select Date & Time">
+            <label for="departure">Departure</label>
+            <input type="date" id="departure">
         </div>
 
         <div class="form4">
@@ -92,11 +92,11 @@
         </div>
 
         <div class="form5">
-            <label for="travellers">Travellers:</label>
+            <label for="travellers">Travellers</label>
             <input type="text" id="travellers" placeholder="Select Travellers">
         </div>
 
-        <div>
+        <div class="form6">
          <input type="submit" value="SEARCH" id="search">
         </div>
     </div>
@@ -347,39 +347,39 @@
       <form id="booking-form1">
           <label for="first-name"> Name</label>
           <input type="text" id="first-name" name="first-name" required placeholder="Enter your Name">
-
+          <br>
           <label for="age">Age</label>
           <input type="number" id="age" name="age" required placeholder="Enter your Age">
-
-          <label for="phone">Phone Number</label>
+          <br>
+          <label for="phone">Mobile</label>
           <input type="tel" id="phone" name="phone" required placeholder="Enter your Mobile">
-
+          <br>
           <label for="departure-city">Departure City</label>
           <input type="text" id="departure-city" name="departure-city" required placeholder="Enter your City">
-
+          <br>
           <label for="destination-city">Destination City</label>
           <input type="text" id="destination-city" name="destination-city" required placeholder="Enter your City">
-
+          <br>
           <label for="departure-date">Departure Date</label>
           <input type="date" id="departure-date" name="departure-date" required>
-
+          <br>
           <label for="choice">Class</label>
           <select id="choice" name="choice" required placeholder="Enter your Class">
               <option value="economy">Economy</option>
               <option value="business">Business</option>
               <option value="first">First Class</option>
           </select>
-
-          <label for="passengers">Number of Passengers</label>
-          <input type="number" id="passengers" name="passengers" min="1" required placeholder="Enter Number of Passengers">
-           
+          <br>
+          <label for="passengers">No. of Passengers</label>
+          <input type="number" id="passengers" name="passengers" min="1" required placeholder="Enter No. of Passengers">
+          <br>
           <label for="price">Price</label>
           <input type="number" name="price" id="price">
-
+          <br>
           <input type="submit" value="Book Flight" onclick="return insertt()" id="btn1">
     </form>
   </section>
-<br><br><br>
+<br><br><br><br>
 
 
  <!------------------ FAQ SECTION ------------------------------>
