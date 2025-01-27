@@ -230,9 +230,9 @@ input[type="submit"]:hover{
 
   @media (max-width: 480px) {
     .form {
-      max-width: 90%; 
+      max-width: 70%; 
       padding: 15px; /* Increase padding for a better look */
-      left: 50%; /* Center the form horizontally */
+      left: 60%; /* Center the form horizontally */
       top: 10%; /* Adjust vertical position */
       transform: translateX(-50%); /* Ensure it's centered */
       border-radius: 15px; /* Slightly reduce the border radius */
