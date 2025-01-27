@@ -36,12 +36,32 @@ body {
 }
 
 #para {
-  color: black;
+  
   font-style: oblique;
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: bold;
   font-family: "Macondo", serif;
   margin: 0;
+  letter-spacing: 0.5px;
+  background: -webkit-repeating-linear-gradient(
+    45deg,
+    #1f2881,
+    #7443ba 10px,
+    #2c2752 90px,
+    #E7717D 10px
+  );
+  background: -webkit-repeating-linear-gradient(
+    45deg,
+    #474E93,
+    #7E5CAD 20px,
+    #A19AD3 40px,
+    #E7717D 80px
+  );
+  -webkit-background-clip:text; 
+  -webkit-text-fill-color: transparent;
+  
 }
+
 
 nav {
   display: flex;
@@ -59,16 +79,15 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 16px;
   display: flex;
- 
+ font-weight: bold;
   align-items: center;
   gap: 5px;
+  
 }
 nav ul li a {
-
-
 padding-top: 10px;
 }
 
@@ -123,13 +142,18 @@ padding-top: 10px;
 
 /* Buttons inside hamburger */
 .btn-signup, .btn-login {
-  background-color: #578E7E;
+  background-color: #7E5CAD;
+  border: 1px solid #CDC1FF;
   color: white;
   border-radius: 10px;
   padding: 10px;
   font-size: 15px;
   text-align: center;
   width: 100px;
+  box-shadow: 2px 2px 6px black;
+  &:hover{
+    transform: scale(1.1);
+  }
 }
 
 .btn-signup:hover, .btn-login:hover {
@@ -154,17 +178,33 @@ body, html {
   box-sizing: border-box;
 }
 
-#clockk {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  text-align: center;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin: 15px;
-  padding-right: 20px;
+/* Container for the scrolling clock */
+#clock-container {
+  width: 100%; 
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  
 }
+#clockk {
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+  /* animation: scrollClock 15s linear infinite; */
+  
+  
+}
+
+/* Scrolling animation */
+@keyframes scrollClock {
+  from {
+    transform: translateX(100%); 
+  }
+  to {
+    transform: translateX(-100%); 
+  }
+}
+
 
 .hours, .minutes, .seconds {
   color: white;
@@ -172,8 +212,25 @@ body, html {
   border: 1px solid cornflowerblue;
   border-radius: 25px;
   padding: 10px;
-  background-color: rgb(31, 32, 36);
   margin: 0 5px;
+
+  
+  background: -webkit-repeating-linear-gradient(
+                
+    #474E93,            
+    #7E5CAD 20px,       
+    #A19AD3 40px,
+    #E7717D  20px   
+  );
+  background: repeating-linear-gradient(
+    
+    #474E93,
+    #7E5CAD 20px,
+    #A19AD3 40px,
+    #E7717D  20px   
+  ); 
+ 
+  
 }
 
 .colon {
@@ -246,6 +303,7 @@ body, html {
   gap:3px;
   height: 50px;
   
+  
 }
 #from-city ,#to-city{
   width: 100%;
@@ -259,13 +317,14 @@ body, html {
   max-width: 100%;
   padding: 3px;
   
-}
+} 
 #travellers{
   width: 100%;
   max-width: 100%;
   padding: 4px;
-  
- 
+} 
+label{
+  font-size: 14px;
 }
 .swap-icon {
   font-size: 25px;
@@ -387,6 +446,9 @@ margin-top: 30px;
     padding: 8px 10px;
     font-size: 10px;
   }
+label{
+    font-size: 12px;
+}
 }
 
 /*--------------- Offer Page ------------------------*/
@@ -841,16 +903,16 @@ h1 {
 
 @media (max-width: 480px) {
   #bookingform {
-      height: auto; /* Adjust height for better scrolling on small screens */
+      height: auto; 
       padding: 10px;
   }
 
   #booking-form1 {
-      padding: 15px 20px; /* Reduce padding for smaller screens */
+      padding: 12px 15px; 
   }
 
   h1 {
-      font-size: 16px; /* Adjust heading size */
+      font-size: 16px; 
       margin-bottom: 15px;
   }
 
@@ -860,12 +922,12 @@ h1 {
   #booking-form1 input[type="date"],
   #booking-form1 select {
       font-size: 8px; /* Slightly increase font size for better readability */
-      padding: 4px; /* Increase input padding for easier touch interaction */
+      padding: 7px; /* Increase input padding for easier touch interaction */
   }
 
   #btn1 {
       font-size: 12px; /* Adjust button font size */
-      padding: 5px; /* Increase button padding for touch */
+      padding: 6px; /* Increase button padding for touch */
   }
 }
 

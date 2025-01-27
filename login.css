@@ -86,7 +86,7 @@ input[type="submit"]:hover {
   } */
    /* From Uiverse.io by Smit-Prajapati */ 
 
-   body{
+body{
     height: 100vh;
     width: 100%;
     background-image: url('./Image/Flight-3.jpg');
@@ -237,3 +237,50 @@ input[type="submit"]:hover {
     color: #0099ff;
     font-size: 12px;
   }
+
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px; /* Reduce base font size */
+    }
+  
+    .container {
+      max-width: 90%; /* Adjust width to fit smaller screens */
+      padding: 20px 25px; /* Reduce padding */
+      border-radius: 20px; /* Smaller radius for a compact look */
+      left: 50%; /* Center horizontally */
+      top: 10%; /* Adjust vertical alignment */
+      transform: translateX(-50%); /* Center the container */
+    }
+  
+    .heading {
+      font-size: 24px; /* Scale down font size */
+    }
+  
+    .form .input {
+      width: 100%; /* Ensure inputs take full width */
+      padding: 12px 15px; /* Reduce padding for inputs */
+    }
+  
+    .form .forgot-password a {
+      font-size: 14px; /* Adjust font size */
+    }
+  
+    .form .login-button {
+      padding-block: 12px; /* Reduce button padding */
+      font-size: 16px; /* Adjust font size */
+    }
+  
+    .social-account-container .social-accounts {
+      gap: 10px; /* Reduce gap between social buttons */
+    }
+  
+    .social-account-container .social-accounts .social-button {
+      width: 35px; /* Adjust button size */
+      aspect-ratio: 1;
+    }
+  
+    .agreement a {
+      font-size: 10px; /* Scale down agreement link font size */
+    }
+  }
+  
