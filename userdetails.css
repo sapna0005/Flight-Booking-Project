@@ -94,6 +94,43 @@ td{
   }
 }
 
+@media (max-width: 480px) {
+  #heading {
+    font-size: 18px; 
+    margin-top: 10px; 
+  }
+
+  fieldset {
+    width: 95%; 
+    top: 10%;
+    left: 2%;
+    padding: 15px; 
+  }
+
+  legend {
+    font-size: 1.2rem; 
+  }
+
+  #search {
+    width: 150%; 
+    margin-left: 3%; 
+  }
+
+  th {
+    font-size: 12px; 
+  }
+
+  td {
+    font-size: 12px; 
+    padding: 6px 10px; 
+  }
+
+  #del, #update {
+    padding: 6px 10px; 
+    font-size: 12px; 
+  }
+}
+
 form{
     border: 1px solid rgb(137, 130, 130);
     box-shadow: 0px 2px 4px;
