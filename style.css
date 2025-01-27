@@ -236,7 +236,7 @@ input[type="submit"]:hover{
     }
   
     .form {
-      max-width: 80%; 
+      max-width: 60%; 
       padding: 15px; 
       left: 60%; 
       top: 5%;
@@ -281,7 +281,7 @@ input[type="submit"]:hover{
   
     .submit input,
     .submit {
-      padding: 12px; 
+      padding: 8px; 
       font-size: 14px; 
     }
   
