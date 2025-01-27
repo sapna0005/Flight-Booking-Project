@@ -244,10 +244,10 @@ body{
     }
   
     .container {
-      max-width: 90%; /* Adjust width to fit smaller screens */
+      max-width: 100%; /* Adjust width to fit smaller screens */
       padding: 20px 25px; /* Reduce padding */
       border-radius: 20px; /* Smaller radius for a compact look */
-      left: 50%; /* Center horizontally */
+      left: 65%; /* Center horizontally */
       top: 10%; /* Adjust vertical alignment */
       transform: translateX(-50%); /* Center the container */
     }
@@ -257,17 +257,17 @@ body{
     }
   
     .form .input {
-      width: 100%; /* Ensure inputs take full width */
+      width: 90%; /* Ensure inputs take full width */
       padding: 12px 15px; /* Reduce padding for inputs */
     }
   
     .form .forgot-password a {
-      font-size: 14px; /* Adjust font size */
+      font-size: 12px; /* Adjust font size */
     }
   
     .form .login-button {
       padding-block: 12px; /* Reduce button padding */
-      font-size: 16px; /* Adjust font size */
+      font-size: 14px; /* Adjust font size */
     }
   
     .social-account-container .social-accounts {
