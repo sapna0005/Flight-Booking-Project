@@ -239,48 +239,46 @@ body{
   }
 
   @media (max-width: 480px) {
-    body {
-      font-size: 14px; /* Reduce base font size */
-    }
+    
   
     .container {
-      max-width: 100%; /* Adjust width to fit smaller screens */
-      padding: 20px 25px; /* Reduce padding */
-      border-radius: 20px; /* Smaller radius for a compact look */
-      left: 65%; /* Center horizontally */
-      top: 10%; /* Adjust vertical alignment */
-      transform: translateX(-50%); /* Center the container */
+      max-width: 100%; 
+      padding: 20px 25px; 
+      border-radius: 20px; 
+      left: 65%; 
+      top: 10%; 
+      transform: translateX(-50%); 
     }
   
     .heading {
-      font-size: 24px; /* Scale down font size */
+      font-size: 24px; 
     }
   
     .form .input {
-      width: 90%; /* Ensure inputs take full width */
-      padding: 12px 15px; /* Reduce padding for inputs */
+      width: 90%; 
+      padding: 12px 15px; 
     }
   
     .form .forgot-password a {
-      font-size: 12px; /* Adjust font size */
+      font-size: 12px; 
     }
   
     .form .login-button {
-      padding-block: 12px; /* Reduce button padding */
-      font-size: 14px; /* Adjust font size */
+      padding-block: 12px; 
+      font-size: 14px; 
     }
   
     .social-account-container .social-accounts {
-      gap: 10px; /* Reduce gap between social buttons */
+      gap: 10px; 
     }
   
     .social-account-container .social-accounts .social-button {
-      width: 35px; /* Adjust button size */
+      width: 35px; 
       aspect-ratio: 1;
     }
   
     .agreement a {
-      font-size: 10px; /* Scale down agreement link font size */
+      font-size: 10px; 
     }
   }
   

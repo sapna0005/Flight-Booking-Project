@@ -227,3 +227,15 @@ input[type="submit"]:hover{
       opacity: 0;
     }
   }
+
+  @media (max-width: 480px) {
+    .form {
+      max-width: 90%; 
+      padding: 15px; /* Increase padding for a better look */
+      left: 50%; /* Center the form horizontally */
+      top: 10%; /* Adjust vertical position */
+      transform: translateX(-50%); /* Ensure it's centered */
+      border-radius: 15px; /* Slightly reduce the border radius */
+      gap: 15px; /* Increase gap between elements for better spacing */
+    }
+  }
