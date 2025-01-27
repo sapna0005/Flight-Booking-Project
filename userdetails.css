@@ -96,13 +96,13 @@ td{
 
 @media (max-width: 480px) {
   #heading {
-    font-size: 18px; 
-    margin-top: 10px; 
+    font-size: 14px; 
+    
   }
 
   fieldset {
-    width: 95%; 
-    top: 10%;
+    width: 70%; 
+    top: 15%;
     left: 2%;
     padding: 15px; 
   }
@@ -113,7 +113,7 @@ td{
 
   #search {
     width: 150%; 
-    margin-left: 3%; 
+    margin-left: 2%; 
   }
 
   th {
