@@ -5,10 +5,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-  height:100vh;
+  height:auto;
   background:linear-gradient(to left, #EEF1FF, #D2DAFF, #AAC4FF, #B1B2FF,#9799f2);
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 #heading{
    text-align: center;
@@ -112,7 +114,7 @@ td{
   }
 
   #search {
-    width: 150%; 
+    width: 15%; 
     margin-left: 2%; 
   }
 
@@ -130,8 +132,18 @@ td{
     font-size: 12px; 
   }
 }
-
-form{
+#paging{
+  position: absolute;
+  top: 102%;
+ left: 4%;
+}
+#formdata{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 100%;
+}
+/* form{
     border: 1px solid rgb(137, 130, 130);
     box-shadow: 0px 2px 4px;
     border-radius: 10px;
@@ -166,45 +178,52 @@ input[type="submit"]{
     cursor: pointer;
     background: linear-gradient(to right, rgb(9, 164, 9), rgb(157, 211, 157));
     border: none;
-}
+} */
 
     /* General Form Styling */
 form {
     max-width: 600px;
     margin: 50px auto;
-    padding: 20px;
-    background-color: #f4f4f4;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
     height: auto;
+    background: #F8F9FD;
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(244, 247, 251) 100%);
+    border-radius: 40px;
+    padding: 25px 35px;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;
   }
   
   form h3 {
     text-align: center;
-    font-size: 24px;
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: 1px;
     margin-bottom: 20px;
-    color: #333;
+    color: rgb(16, 137, 211);
   }
   
   form label {
-    display: block;
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 5px;
+    position: relative;
     color: #555;
+    font-size: 14px;
   }
   
   form input,
   form select {
+  
     width: 100%;
-    padding: 10px;
+    background: white;
+    border: none;
+    padding: 12px 10px 05px 20px;
+    border-radius: 20px;
+    margin-top: 2px;
     margin-bottom: 15px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-    box-sizing: border-box;
+    box-shadow: #cff0ff 0px 10px 10px -5px;
+    border-inline: 2px solid transparent;
+    border: none;
   }
   
   form input:focus,
@@ -218,13 +237,13 @@ form {
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
-    background-color: #007bff;
+    background-color:  rgb(16, 137, 211);;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
+  } 
   
   form input[type="submit"]:hover {
     background-color: #0056b3;

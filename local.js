@@ -82,6 +82,7 @@ let login=()=>{
    let localpass=localStorage.getItem("pass")
   
    if (loginname==localname && loginpass==localpass) {
+    localStorage.setItem("islogin","true")
     location.href="index.html";
    }
    else
@@ -90,6 +91,10 @@ let login=()=>{
    }
    return false;
 
+}
+
+let logout=()=>{
+  window.localStorage.clear();
 }
 
 setInterval(() => {

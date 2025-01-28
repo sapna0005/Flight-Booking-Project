@@ -43,22 +43,7 @@ body {
   font-family: "Macondo", serif;
   margin: 0;
   letter-spacing: 0.5px;
-  background: -webkit-repeating-linear-gradient(
-    45deg,
-    #1f2881,
-    #7443ba 10px,
-    #2c2752 90px,
-    #E7717D 10px
-  );
-  background: -webkit-repeating-linear-gradient(
-    45deg,
-    #474E93,
-    #7E5CAD 20px,
-    #A19AD3 40px,
-    #E7717D 80px
-  );
-  -webkit-background-clip:text; 
-  -webkit-text-fill-color: transparent;
+  color: white;
   
 }
 
@@ -82,7 +67,7 @@ nav ul li a {
   color: white;
   font-size: 16px;
   display: flex;
- font-weight: bold;
+  font-weight: bold;
   align-items: center;
   gap: 5px;
   
@@ -841,95 +826,7 @@ button:hover {
   
 /* -------------booking form--------------------- */
 /* Booking Form Section */
-#bookingform {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 140vh;
-}
 
-h1 {
-  text-align: center;
-  font-size: 25px;
-  font-family: "Lobster", serif;
-  font-weight: 400;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
-}
-
-#booking-form1 {
-  width: 100%;
-  max-width: 500px;
-  background: linear-gradient(to bottom, #ffffff, #eef1ff,#7091e6,#3d52a0);
-  padding: 20px 30px;
-  border: 1px;
-  border-radius:10px;
-  margin-bottom: 35px;
-}
-#booking-form1 label{
- font-size: 14px;
- padding-left: 5px;
-}
-
-#booking-form1 input[type="text"],
-#booking-form1 input[type="number"],
-#booking-form1 input[type="tel"],
-#booking-form1 input[type="date"],
-#booking-form1 select{
-  
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 12px;
-  width: 100%;
-  padding:7px ;
-  margin-bottom: 10px;
-  margin-top: 8px;
-  
-}
-
-#btn1 {
-  background:linear-gradient(to left, #9799f2,#9799f2, #AAC4FF, #B1B2FF,#D2DAFF);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 20px;
-  padding: 8px;
-  width: 100%;
-}
-
-@media (max-width: 480px) {
-  #bookingform {
-      height: auto; 
-      padding: 10px;
-  }
-
-  #booking-form1 {
-      padding: 12px 15px; 
-  }
-
-  h1 {
-      font-size: 16px; 
-      margin-bottom: 15px;
-  }
-
-  #booking-form1 input[type="text"],
-  #booking-form1 input[type="number"],
-  #booking-form1 input[type="tel"],
-  #booking-form1 input[type="date"],
-  #booking-form1 select {
-      font-size: 8px; /* Slightly increase font size for better readability */
-      padding: 7px; /* Increase input padding for easier touch interaction */
-  }
-
-  #btn1 {
-      font-size: 12px; /* Adjust button font size */
-      padding: 6px; /* Increase button padding for touch */
-  }
-}
 
 
 

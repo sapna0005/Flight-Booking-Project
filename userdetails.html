@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lexend+Giga:wght@100..900&family=Lobster&family=Oleo+Script:wght@400;700&family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.6.0/pagination.css">
 
     <link rel="stylesheet" href="userdetails.css">
     <title>Document</title>
@@ -20,7 +20,7 @@
     <fieldset>
      <legend>User Data</legend>
      <div>
-        <input type="search"  id="search" placeholder="Search By Name" >
+        <input type="search"  id="search" placeholder="Search By Name"  oninput="filterout()">
     </div>
     <table align="center" cellspacing="20px" cellpadding="10px">
        <thead>
@@ -44,9 +44,18 @@
 </table>
 </fieldset>
 
-<div id="updateform"></div>
 
+<div id="paging"></div>
+
+<section id="formdata">
+<div id="updateform"></div>
+</section>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.6.0/pagination.min.js"></script>
 <script src="userdetailstyped.js"></script>
 
 <script src="crud.js"></script>

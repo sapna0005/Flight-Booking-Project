@@ -24,7 +24,7 @@
   <div id="login-page">
     <div class="logo">
       <img src="https://cdn-icons-gif.flaticon.com/11614/11614833.gif" alt="">
-      <h3 id="para" data-aos="flip-right" data-aos-duration="3000" data-aos-delay="200">DreamsAero</h3>
+      <h3 id="para" data-aos="flip-right" data-aos-duration="3000" data-aos-delay="200">DreamAero</h3>
     </div>
     <nav>
       <div class="hamburger" onclick="toggleMenu()">
@@ -38,8 +38,8 @@
         <li data-aos="flip-down" data-aos-duration="3000" data-aos-delay="600"><a href="#"><i
               class="fa-solid fa-circle-question"></i> Help</a></li>
         <!-- Login and Sign Up inside the hamburger -->
-        <li data-aos="flip-left" data-aos-duration="3000" data-aos-delay="800"><a href="signup.html" class="btn-signup"><i
-              class="fa-solid fa-user"></i> Sign Up</a></li>
+        <li data-aos="flip-left" data-aos-duration="3000" data-aos-delay="800" class="btn-signup" onclick="logout()"><i
+              class="fa-solid fa-user"></i>Logout</li>
         <li data-aos="flip-left" data-aos-duration="3000" data-aos-delay="800"><a href="login.html" class="btn-login"><i
               class="fa-solid fa-user"></i> Login</a></li>
       </ul>
@@ -64,9 +64,15 @@
         <div class="form1">
             <label for="from-city">From</label>
             <select id="from-city">
-                <option value="NYC">New York</option>
-                <option value="LAX">Los Angeles</option>
-                <option value="CHI">Chicago</option>
+              <option value="New Delhi">New Delhi</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Goa">Goa</option>
+              <option value="Indore">Indore</option>
+              <option value="Jaipur">Jaipur</option>
+              <option value="Hyderabad">Hyderabad</option>
+              <option value="Varanasi">Varanasi</option>
+              <option value="Pune">Pune</option>
+              <option value="Banglore">Banglore</option>
              </select>
         </div>
 
@@ -75,9 +81,15 @@
             <div class="form2">
             <label for="to-city">To</label>
             <select id="to-city">
-                <option value="LAX">Los Angeles</option>
-                <option value="NYC">New York</option>
-                <option value="CHI">Chicago</option>
+              <option value="New Delhi">New Delhi</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Goa">Goa</option>
+              <option value="Indore">Indore</option>
+              <option value="Jaipur">Jaipur</option>
+              <option value="Hyderabad">Hyderabad</option>
+              <option value="Varanasi">Varanasi</option>
+              <option value="Pune">Pune</option>
+              <option value="Banglore">Banglore</option>
              </select>
         </div>
        
@@ -136,6 +148,7 @@
   
   <br><br><br><br>
 
+<!--------------- Popular Flight section ------------------>
 <section id="thirdpage">
     <h1>Popular Flight Routes</h1>
     <div id="routes">
@@ -273,15 +286,21 @@
 </section>
 <br><br><br>
 
-<!-- popular flights section -->
+<!------------------- cheapest Flight section -------------------------->
 <section class="flight-section">
   <div id="listcities">
   <h1>Cheapest Flights from </h1>
     <select id="flight-city">
-      <option value="NYC">New York</option>
-      <option value="LAX">Los Angeles</option>
-      <option value="CHI">Chicago</option>
-      <!-- More cities can be added here -->
+      <option value="New Delhi">New Delhi</option>
+      <option value="Mumbai">Mumbai</option>
+      <option value="Goa">Goa</option>
+      <option value="Indore">Indore</option>
+      <option value="Jaipur">Jaipur</option>
+      <option value="Hyderabad">Hyderabad</option>
+      <option value="Varanasi">Varanasi</option>
+      <option value="Pune">Pune</option>
+      <option value="Banglore">Banglore</option>
+
   </select>
 </div>
   
@@ -291,94 +310,55 @@
         <img src="/Image/jaipurimage.jpeg" alt="City Image">
         <h3>Jaipur</h3>
         <p>Rs:3000</p>
-        <button>Book Flight</button>
+        <button onclick="book()">Book Flight</button>
       </div>
       <div class="card">
         <img src="/Image/mumbai.jpeg" alt="City Image">
         <h3>Mumbai</h3>
         <p>Rs:4000</p>
-        <button>Book Flight</button>
+        <button onclick="book()">Book Flight</button>
       </div>
       <div class="card">
         <img src="/Image/delhi.jpeg" alt="City Image">
         <h3>Delhi</h3>
         <p>Rs:4000</p>
-        <button>Book Flight</button>
+        <button onclick="book()">Book Flight</button>
       </div>
       <div class="card">
         <img src="/Image/hyderabad.jpeg" alt="City Image">
         <h3>Hyderabad</h3>
         <p>Rs:4500</p>
-        <button>Book Flight</button>
+        <button onclick="book()">Book Flight</button>
       </div>
       <div class="card">
         <img src="/Image/banglorenewimage.jpg" alt="City Image">
         <h3>Bengaluru</h3>
         <p>Rs:5000</p>
-        <button>Book Flight</button>
+        <button onclick="book()">Book Flight</button>
       </div>
       <div class="card">
         <img src="/Image/varanasi.jpg" alt="City Image">
         <h3>Varanasi</h3>
         <p>Rs:3500</p>
-        <button>Book Flight</button>
+        <button onclick="book()">Book Flight</button>
       </div>
       <div class="card">
         <img src="/Image/pune.jpg" alt="City Image">
         <h3>Pune</h3>
         <p>Rs:4000</p>
-        <button>Book Flight</button>
+        <button onclick="book()">Book Flight</button>
       </div>
       
       <div class="card">
         <img src="/Image/indore.jpg" alt="City Image">
         <h3>Indore</h3>
         <p>Rs:2500</p>
-        <button>Book Flight</button>
+        <button onclick="book()">Book Flight</button>
       </div>
     </div>
   
   </div>
 </section>
-
-<!---------------------- Booking Form Section --------------------->
-<section id="bookingform">
-   <h1>Flight Booking Form</h1>
-      <form id="booking-form1">
-          <label for="first-name"> Name</label>
-          <input type="text" id="first-name" name="first-name" required placeholder="Enter your Name">
-          <br>
-          <label for="age">Age</label>
-          <input type="number" id="age" name="age" required placeholder="Enter your Age">
-          <br>
-          <label for="phone">Mobile</label>
-          <input type="tel" id="phone" name="phone" required placeholder="Enter your Mobile">
-          <br>
-          <label for="departure-city">Departure City</label>
-          <input type="text" id="departure-city" name="departure-city" required placeholder="Enter your City">
-          <br>
-          <label for="destination-city">Destination City</label>
-          <input type="text" id="destination-city" name="destination-city" required placeholder="Enter your City">
-          <br>
-          <label for="departure-date">Departure Date</label>
-          <input type="date" id="departure-date" name="departure-date" required>
-          <br>
-          <label for="choice">Class</label>
-          <select id="choice" name="choice" required placeholder="Enter your Class">
-              <option value="economy">Economy</option>
-              <option value="business">Business</option>
-              <option value="first">First Class</option>
-          </select>
-          <br>
-          <label for="passengers">No. of Passengers</label>
-          <input type="number" id="passengers" name="passengers" min="1" required placeholder="Enter No. of Passengers">
-          <br>
-          <label for="price">Price</label>
-          <input type="number" name="price" id="price">
-          <br>
-          <input type="submit" value="Book Flight" onclick="return insertt()" id="btn1">
-    </form>
-  </section>
 <br><br><br><br>
 
 
@@ -427,9 +407,9 @@
           <p>Yes, we offer travel insurance options during the booking process. It's recommended to protect your trip against unforeseen circumstances.</p>
       </div>
 
-      <div class="faq-item" style="background-image: url('images/insurance.jpg');" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="800">
-        <h2>9. Do you offer travel insurance?</h2>
-        <p>Yes, we offer travel insurance options during the booking process. It's recommended to protect your trip against unforeseen circumstances.</p>
+      <div class="faq-item" style="background-image: url('images/passport.jpg');" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="800">
+        <h2>9. Do I need a passport for domestic travel?</h2>
+        <p>For domestic flights within most countries, a government-issued ID such as a driver's license is sufficient.</p>
     </div>
 
   </div>

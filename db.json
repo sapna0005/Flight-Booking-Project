@@ -1,13 +1,13 @@
 {
   "flight": [
     {
-      "name": "Sid",
+      "name": "Sidd",
       "age": "34",
       "number": "353646466",
       "depcity": "bhopal",
       "descity": "hdvfjdfd",
       "depdate": "2025-01-25",
-      "class": "economy",
+      "choice": "economy",
       "passengers": "5",
       "price": "250",
       "id": "24eb"
@@ -19,10 +19,58 @@
       "depcity": "bhopal",
       "descity": "Bhopal",
       "depdate": "2025-01-26",
-      "class": "economy",
+      "choice": "economy",
       "passengers": "3",
       "price": "5000",
       "id": "6750"
+    },
+    {
+      "id": "678c",
+      "name": "Sapna Sahani",
+      "age": "44",
+      "number": "09669773626",
+      "depcity": "bhopal",
+      "descity": "Indore",
+      "depdate": "2025-01-28",
+      "choice": "business",
+      "passengers": "3",
+      "price": "999"
+    },
+    {
+      "id": "ed71",
+      "name": "Aayushi",
+      "age": "29",
+      "number": "9876543210",
+      "depcity": "mumbai",
+      "descity": "delhi",
+      "depdate": "2025-01-29",
+      "choice": "economy",
+      "passengers": "6",
+      "price": "1000000"
+    },
+    {
+      "id": "ead0",
+      "name": "Ajay",
+      "age": "30",
+      "number": "7654389019",
+      "depcity": "banglore",
+      "descity": "coimbatore",
+      "depdate": "2025-02-09",
+      "choice": "first",
+      "passengers": "1",
+      "price": "20000"
+    },
+    {
+      "name": "Vinee",
+      "age": "20",
+      "number": "9873456702",
+      "depcity": "hyderabad",
+      "descity": "banglore",
+      "depdate": "2025-02-07",
+      "choice": "economy",
+      "passengers": "2",
+      "price": "20000",
+      "id": "807f"
     }
   ]
 }

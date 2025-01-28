@@ -40,10 +40,14 @@ let fetchData = async () => {
   let data = await res.json();
 
   console.log(data);
+  paginationn(data);
+};
+let showData=(data)=>{
   let show = document.querySelector("#display");
   show.innerHTML = "";
+  
 
-  data.forEach((e) => {
+data.forEach((e) => {
       show.innerHTML += `
           <tr data-id="${e.id}">
               <td>${e.name}</td>
@@ -86,11 +90,14 @@ let deelete=(id)=>{
 }
 
 let updatee=async(id)=>{
+
   let url=`http://localhost:3000/flight/${id}`
   let res=await fetch(url)
   let data=await res.json()
+ 
   console.log(data);
-  
+ 
+
    let Formdata=`
    <form >
    <h3>Update Here....</h3>
@@ -129,7 +136,9 @@ let updatee=async(id)=>{
    <input type="submit" value="Update" onclick="return finalUpdate('${data.id}')">
    </form>
 ` 
+
     document.querySelector("#updateform").innerHTML=Formdata
+    
   }
 
     let finalUpdate=(id)=>{
@@ -172,3 +181,26 @@ let updatee=async(id)=>{
   }
   
   
+
+  let book=()=>{
+
+     if(localStorage.getItem("islogin")=="true"){
+          location.href="booking.html"
+     }
+     else{
+      alert("please login first")
+     }
+}
+
+let paginationn=(data)=>{
+  $('#paging').pagination({
+    dataSource: data,
+    pageSize:5,
+    callback: function(data, pagination) {
+      
+showData(data)
+        
+    }
+})
+}
+
