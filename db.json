@@ -1,7 +1,7 @@
 {
   "flight": [
     {
-      "name": "Sidd",
+      "name": "Sid",
       "age": "34",
       "number": "353646466",
       "depcity": "bhopal",
@@ -9,7 +9,6 @@
       "depdate": "2025-01-25",
       "choice": "economy",
       "passengers": "5",
-      "price": "250",
       "id": "24eb"
     },
     {
@@ -21,7 +20,6 @@
       "depdate": "2025-01-26",
       "choice": "economy",
       "passengers": "3",
-      "price": "5000",
       "id": "6750"
     },
     {
@@ -33,8 +31,7 @@
       "descity": "Indore",
       "depdate": "2025-01-28",
       "choice": "business",
-      "passengers": "3",
-      "price": "999"
+      "passengers": "3"
     },
     {
       "id": "ed71",
@@ -45,8 +42,7 @@
       "descity": "delhi",
       "depdate": "2025-01-29",
       "choice": "economy",
-      "passengers": "6",
-      "price": "1000000"
+      "passengers": "6"
     },
     {
       "id": "ead0",
@@ -57,8 +53,7 @@
       "descity": "coimbatore",
       "depdate": "2025-02-09",
       "choice": "first",
-      "passengers": "1",
-      "price": "20000"
+      "passengers": "1"
     },
     {
       "name": "Vinee",
@@ -69,8 +64,29 @@
       "depdate": "2025-02-07",
       "choice": "economy",
       "passengers": "2",
-      "price": "20000",
       "id": "807f"
+    },
+    {
+      "id": "96cf",
+      "name": "Sapna Sahani",
+      "age": "29",
+      "number": "9669773626",
+      "depcity": "delhi",
+      "descity": "Bhopal",
+      "depdate": "2025-01-30",
+      "choice": "economy",
+      "passengers": "6"
+    },
+    {
+      "id": "b3f0",
+      "name": "Deepak Dangi",
+      "age": "29",
+      "number": "966977609",
+      "depcity": "delhi",
+      "descity": "Bhopal",
+      "depdate": "2025-01-30",
+      "choice": "economy",
+      "passengers": "6"
     }
   ]
 }

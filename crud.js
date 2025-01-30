@@ -8,7 +8,6 @@
       let depdate=document.querySelector("#departure-date").value;
       let choice=document.querySelector("#choice").value;
       let passengers=document.querySelector("#passengers").value;
-      let price=document.querySelector("#price").value;
      
       let url='http://localhost:3000/flight'
       
@@ -27,7 +26,7 @@
             depdate:depdate,
             class:choice,
             passengers:passengers,
-            price:price
+            
           })
       }),
       location.href="userdetails.html";
@@ -58,7 +57,7 @@ data.forEach((e) => {
               <td>${e.depdate}</td>
               <td>${e.choice}</td>
               <td>${e.passengers}</td>
-              <td>${e.price}</td>
+             
 
               <td onclick="deelete('${e.id}')" id="del">Delete</td>
               <td onclick="updatee('${e.id}')" id="update">Update</td>
@@ -130,8 +129,7 @@ let updatee=async(id)=>{
           <label for="uppassengers">Number of Passengers</label>
           <input type="number" id="uppassengers" value="${data.passengers}" name="passengers" min="1" required placeholder="Enter Number of Passengers">
            
-          <label for="upprice">Price</label>
-          <input type="number" id="upprice" value="${data.price}" name="price" >
+          
 
    <input type="submit" value="Update" onclick="return finalUpdate('${data.id}')">
    </form>
@@ -150,7 +148,6 @@ let updatee=async(id)=>{
     let inpdepdate=document.querySelector("#updepdate").value;
     let inpchoice=document.querySelector("#upchoice").value;
     let inpassengers=document.querySelector("#uppassengers").value;
-    let inprice=document.querySelector("#upprice").value;
 
 
 
@@ -171,7 +168,7 @@ let updatee=async(id)=>{
         depdate: inpdepdate,
         class: inpchoice,
         passengers:inpassengers,
-        price:inprice
+        
        
     
       })

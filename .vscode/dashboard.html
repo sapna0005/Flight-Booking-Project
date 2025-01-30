@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="dashboard.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <section id="home-page">
+    <div id="ticket-search">
+
+      <!-- Input bar -->
+      <div class="flight-form">
+        <div class="form1">
+          <label for="from-city">From</label>
+          <select id="from-city">
+            <option value="New Delhi">New Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Goa">Goa</option>
+            <option value="Indore">Indore</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Varanasi">Varanasi</option>
+            <option value="Pune">Pune</option>
+            <option value="Banglore">Banglore</option>
+          </select>
+        </div>
+
+        <i class="fas fa-exchange-alt swap-icon" id="swap-cities"></i>
+
+        <div class="form2">
+          <label for="to-city">To</label>
+          <select id="to-city">
+            <option value="New Delhi">New Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Goa">Goa</option>
+            <option value="Indore">Indore</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Varanasi">Varanasi</option>
+            <option value="Pune">Pune</option>
+            <option value="Banglore">Banglore</option>
+          </select>
+        </div>
+
+        <div class="form3">
+          <label for="departure">Departure</label>
+          <input type="date" id="departure">
+        </div>
+
+        <div class="form4">
+          <label for="return">Return</label>
+          <input type="date" id="return">
+        </div>
+
+        <div class="form5">
+          <label for="travellers">Travellers & Class</label>
+          <input type="text" id="travellers" placeholder="Select Travellers" readonly onclick="toggleDropdown()">
+
+          <div class="dropdown" id="travellerDropdown">
+            <h4>Travellers</h4>
+
+            <div class="option">
+              <label>Adults:</label>
+              <select id="adults">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
+            </div>
+
+            <div class="option">
+              <label>Children:</label>
+              <select id="children">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
+            </div>
+
+            <div class="option">
+              <label>Infants:</label>
+              <select id="infants">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
+            </div>
+
+            <h4>Class</h4>
+            <div class="option">
+              <label>Select Class:</label>
+              <select id="travelClass">
+                <option value="Economy">Economy</option>
+                <option value="Business">Business</option>
+                <option value="First Class">First Class</option>
+              </select>
+            </div>
+
+            <button class="apply-btn" onclick="applySelection()">Apply</button>
+          </div>
+        </div>
+
+        <div class="form6">
+          <input type="submit" value="SEARCH" id="search" onclick="display()">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sidebar">
+    <h2>Admin Dashboard</h2>
+    <ul>
+      <li><a href="#dashboard">Dashboard</a></li>
+      <li><a href="#main-content">Flight Listings</a></li>
+      <li><a href="#">Manage Reservations</a></li>
+      <li><a href="#">User Management</a></li>
+    </ul>
+  </div>
+
+  
+
+  <section id="main-content">
+    <div id="flight-details1">
+
+      <div id="indigoing">
+        <img src="../Image/logo.png" alt="">
+        <div id="container">
+          <h3>Indigo</h3>
+          <p>6E708</p>
+        </div>
+      </div>
+
+      <div id="time">
+        <h5>04:00</h5>
+        <p>DEL</p>
+      </div>
+
+      <div>
+        <p>2h 15min</p>
+        <p>-----------</p>
+        <p>Non stop</p>
+      </div>
+
+      <div id="time">
+        <h5>06:20</h5>
+        <p>BOM</p>
+      </div>
+
+      <div id="time">
+        <h5>Rs.5,499</h5>
+        <p><a href="#">Extra Rs.490 off</a></p>
+      </div>
+
+      <div id="btn">
+        <input type="submit" value="Book">
+      </div>
+    </div>
+
+    <div id="flight-details1">
+
+      <div id="indigoing">
+        <img src="../Image/logo.png" alt="">
+        <div id="container">
+          <h3>Indigo</h3>
+          <p>6E708</p>
+        </div>
+      </div>
+
+      <div id="time">
+        <h5>04:00</h5>
+        <p>DEL</p>
+      </div>
+
+      <div>
+        <p>2h 15min</p>
+        <p>-----------</p>
+        <p>Non stop</p>
+      </div>
+
+      <div id="time">
+        <h5>06:20</h5>
+        <p>BOM</p>
+      </div>
+
+      <div id="time">
+        <h5>Rs.5,499</h5>
+        <p><a href="#">Extra Rs.490 off</a></p>
+      </div>
+
+      <div id="btn">
+        <input type="submit" value="Book">
+      </div>
+    </div>
+
+    <div id="flight-details1">
+
+      <div id="indigoing">
+        <img src="../Image/logo.png" alt="">
+        <div id="container">
+          <h3>Indigo</h3>
+          <p>6E708</p>
+        </div>
+      </div>
+
+      <div id="time">
+        <h5>04:00</h5>
+        <p>DEL</p>
+      </div>
+
+      <div>
+        <p>2h 15min</p>
+        <p>-----------</p>
+        <p>Non stop</p>
+      </div>
+
+      <div id="time">
+        <h5>06:20</h5>
+        <p>BOM</p>
+      </div>
+
+      <div id="time">
+        <h5>Rs.5,499</h5>
+        <p><a href="#">Extra Rs.490 off</a></p>
+      </div>
+
+      <div id="btn">
+        <input type="submit" value="Book">
+      </div>
+    </div>
+
+    <div id="flight-details1">
+
+      <div id="indigoing">
+        <img src="../Image/logo.png" alt="">
+        <div id="container">
+          <h3>Indigo</h3>
+          <p>6E708</p>
+        </div>
+      </div>
+
+      <div id="time">
+        <h5>04:00</h5>
+        <p>DEL</p>
+      </div>
+
+      <div>
+        <p>2h 15min</p>
+        <p>-----------</p>
+        <p>Non stop</p>
+      </div>
+
+      <div id="time">
+        <h5>06:20</h5>
+        <p>BOM</p>
+      </div>
+
+      <div id="time">
+        <h5>Rs.5,499</h5>
+        <p><a href="#">Extra Rs.490 off</a></p>
+      </div>
+
+      <div id="btn">
+        <input type="submit" value="Book">
+      </div>
+    </div>
+
+    <div id="flight-details1">
+
+      <div id="indigoing">
+        <img src="../Image/logo.png" alt="">
+        <div id="container">
+          <h3>Indigo</h3>
+          <p>6E708</p>
+        </div>
+      </div>
+
+      <div id="time">
+        <h5>04:00</h5>
+        <p>DEL</p>
+      </div>
+
+      <div>
+        <p>2h 15min</p>
+        <p>-----------</p>
+        <p>Non stop</p>
+      </div>
+
+      <div id="time">
+        <h5>06:20</h5>
+        <p>BOM</p>
+      </div>
+
+      <div id="time">
+        <h5>Rs.5,499</h5>
+        <p><a href="#">Extra Rs.490 off</a></p>
+      </div>
+
+      <div id="btn">
+        <input type="submit" value="Book">
+      </div>
+    </div>
+
+
+
+
+  </section>
+
+
+  <script src="dashboard.js"></script>
+</body>
+
+</html>
