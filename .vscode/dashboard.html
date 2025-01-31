@@ -12,138 +12,82 @@
 </head>
 
 <body>
-  <section id="home-page">
-    <div id="ticket-search">
-
-      <!-- Input bar -->
-      <div class="flight-form">
-        <div class="form1">
-          <label for="from-city">From</label>
-          <select id="from-city">
-            <option value="New Delhi">New Delhi</option>
-            <option value="Mumbai">Mumbai</option>
-            <option value="Goa">Goa</option>
-            <option value="Indore">Indore</option>
-            <option value="Jaipur">Jaipur</option>
-            <option value="Hyderabad">Hyderabad</option>
-            <option value="Varanasi">Varanasi</option>
-            <option value="Pune">Pune</option>
-            <option value="Banglore">Banglore</option>
-          </select>
-        </div>
-
-        <i class="fas fa-exchange-alt swap-icon" id="swap-cities"></i>
-
-        <div class="form2">
-          <label for="to-city">To</label>
-          <select id="to-city">
-            <option value="New Delhi">New Delhi</option>
-            <option value="Mumbai">Mumbai</option>
-            <option value="Goa">Goa</option>
-            <option value="Indore">Indore</option>
-            <option value="Jaipur">Jaipur</option>
-            <option value="Hyderabad">Hyderabad</option>
-            <option value="Varanasi">Varanasi</option>
-            <option value="Pune">Pune</option>
-            <option value="Banglore">Banglore</option>
-          </select>
-        </div>
-
-        <div class="form3">
-          <label for="departure">Departure</label>
-          <input type="date" id="departure">
-        </div>
-
-        <div class="form4">
-          <label for="return">Return</label>
-          <input type="date" id="return">
-        </div>
-
-        <div class="form5">
-          <label for="travellers">Travellers & Class</label>
-          <input type="text" id="travellers" placeholder="Select Travellers" readonly onclick="toggleDropdown()">
-
-          <div class="dropdown" id="travellerDropdown">
-            <h4>Travellers</h4>
-
-            <div class="option">
-              <label>Adults:</label>
-              <select id="adults">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-              </select>
-            </div>
-
-            <div class="option">
-              <label>Children:</label>
-              <select id="children">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-              </select>
-            </div>
-
-            <div class="option">
-              <label>Infants:</label>
-              <select id="infants">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-              </select>
-            </div>
-
-            <h4>Class</h4>
-            <div class="option">
-              <label>Select Class:</label>
-              <select id="travelClass">
-                <option value="Economy">Economy</option>
-                <option value="Business">Business</option>
-                <option value="First Class">First Class</option>
-              </select>
-            </div>
-
-            <button class="apply-btn" onclick="applySelection()">Apply</button>
-          </div>
-        </div>
-
-        <div class="form6">
-          <input type="submit" value="SEARCH" id="search" onclick="display()">
-        </div>
-      </div>
+  <div id="login-page">
+    <div class="logo">
+      <img src="https://cdn-icons-gif.flaticon.com/11614/11614833.gif" alt="">
+      <h3 id="para" data-aos="flip-right" data-aos-duration="3000" data-aos-delay="200">DreamAero</h3>
     </div>
-  </section>
+    <nav>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul id="nav-menu">
+        <li data-aos="flip-down" data-aos-duration="3000" data-aos-delay="600"><a href="#"><i
+              class="fa-solid fa-plane-up"></i> My Trips</a></li>
+        <li data-aos="flip-down" data-aos-duration="3000" data-aos-delay="600"><a href="#"><i
+              class="fa-solid fa-circle-question"></i> Help</a></li>
+        <!-- Login and Sign Up inside the hamburger -->
+        <!-- <li data-aos="flip-left" data-aos-duration="3000" data-aos-delay="800" class="btn-signup" onclick="logout()"><i
+              class="fa-solid fa-user"></i>Logout</li>
+        <li data-aos="flip-left" data-aos-duration="3000" data-aos-delay="800"><a href="login.html" class="btn-login"><i
+              class="fa-solid fa-user"></i> Login</a></li> -->
+      </ul>
+    </nav>
+  </div>
 
   <div class="sidebar">
     <h2>Admin Dashboard</h2>
     <ul>
-      <li><a href="#dashboard">Dashboard</a></li>
+      <li><a href="#formdetails">Dashboard</a></li>
       <li><a href="#main-content">Flight Listings</a></li>
       <li><a href="#">Manage Reservations</a></li>
       <li><a href="#">User Management</a></li>
     </ul>
   </div>
+ 
+  <section id="formdetails">
+    <h1>Flight Details</h1>
+   <form id="flightdetails">
 
+    <!-- FlightName -->
+    <label for="flightname">FlightName</label>
+    <input type="text" id="flightname"><br>
+
+    <!-- FlightNumber -->
+    <label for="flightnum">FlightNumber</label>
+    <input type="text" id="flightnum"><br>
+
+    <!-- ArrivalTime -->
+    <label for="arrivaltime">ArrivalTime</label>
+    <input type="time" id="arrivaltime"><br>
+
+    <!-- DepartureTime -->
+    <label for="deptime">DepartureTime</label>
+    <input type="time" id="deptime"><br>
+
+    <!-- ArrivalCity -->
+    <label for="arrcity">ArrivalCity</label>
+    <input type="text" id="arrcity"><br>
+
+    <!-- DepartureCity -->
+    <label for="depcity">DepartureCity</label>
+    <input type="text" id="depcity"><br>
+
+    <!-- StoppageTime -->
+    <label for="stoptime">StoppageTime</label>
+    <input type="text" id="stoptime"><br>
+
+    <!-- Price -->
+    <label for="price">Price</label>
+    <input type="text" id="price"><br>
+
+    <!-- Button -->
+    <input type="submit" value="Add Flight" onclick="return details()">
+  
+  </form>
+</section>
   
 
   <section id="main-content">
@@ -179,7 +123,7 @@
       </div>
 
       <div id="btn">
-        <input type="submit" value="Book">
+        <input type="submit" value="Add">
       </div>
     </div>
 
@@ -215,7 +159,7 @@
       </div>
 
       <div id="btn">
-        <input type="submit" value="Book">
+        <input type="submit" value="Add">
       </div>
     </div>
 
@@ -251,7 +195,7 @@
       </div>
 
       <div id="btn">
-        <input type="submit" value="Book">
+        <input type="submit" value="Add">
       </div>
     </div>
 
@@ -287,7 +231,7 @@
       </div>
 
       <div id="btn">
-        <input type="submit" value="Book">
+        <input type="submit" value="Add">
       </div>
     </div>
 
@@ -323,7 +267,7 @@
       </div>
 
       <div id="btn">
-        <input type="submit" value="Book">
+        <input type="submit" value="Add">
       </div>
     </div>
 

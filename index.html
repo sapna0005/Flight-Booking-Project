@@ -104,16 +104,79 @@
         </div>
 
         <div class="form5">
-            <label for="travellers">Travellers</label>
-            <input type="text" id="travellers" placeholder="Select Travellers">
+          <label for="travellers">Travellers & Class</label>
+          <input type="text" id="travellers" placeholder="Select Travellers" readonly onclick="toggleDropdown()">
+
+          <div class="dropdown" id="travellerDropdown">
+            <h4>Travellers</h4>
+
+            <div class="option">
+              <label>Adults:</label>
+              <select id="adults">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
+            </div>
+
+            <div class="option">
+              <label>Children:</label>
+              <select id="children">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
+            </div>
+
+            <div class="option">
+              <label>Infants:</label>
+              <select id="infants">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
+            </div>
+
+            <h4>Class</h4>
+            <div class="option">
+              <label>Select Class:</label>
+              <select id="travelClass">
+                <option value="Economy">Economy</option>
+                <option value="Business">Business</option>
+                <option value="First Class">First Class</option>
+              </select>
+            </div>
+
+            <button class="apply-btn" onclick="applySelection()">Apply</button>
+          </div>
         </div>
 
         <div class="form6">
-         <input type="submit" value="SEARCH" id="search">
+          <input type="submit" value="SEARCH" id="search" onclick="display()">
         </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
     <br><br>
         
    

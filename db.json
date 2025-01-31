@@ -88,5 +88,40 @@
       "choice": "economy",
       "passengers": "6"
     }
+  ],
+  "admin": [
+    {
+      "flightname": "Indigo",
+      "flightnumber": "6E708",
+      "arrivaltime": "04:00",
+      "deptime": "06:20",
+      "arrcity": "NewDelhi",
+      "depcity": "Mumbai",
+      "stoptime": "nonstop",
+      "price": "5499",
+      "id": "de55"
+    },
+    {
+      "id": "c923",
+      "flightname": "AirIndia",
+      "flightnumber": "00789",
+      "arrivaltime": "17:31",
+      "deptime": "19:31",
+      "arrcity": "bhopal",
+      "depcity": "gaya",
+      "stoptime": "1hr",
+      "price": "6999"
+    },
+    {
+      "id": "a5fa",
+      "flightname": "AirIndia",
+      "flightnumber": "007",
+      "arrivaltime": "20:33",
+      "deptime": "21:33",
+      "arrcity": "bhopal",
+      "depcity": "gaya",
+      "stoptime": "1hr",
+      "price": "699"
+    }
   ]
 }

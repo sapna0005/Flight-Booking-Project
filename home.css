@@ -333,6 +333,53 @@ label{
   }
 }
 
+.dropdown {
+  display: none;
+  position: absolute;
+  bottom: 70px;
+  left: 45%;
+  width: 30%;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.dropdown h4 {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+.option {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  align-items: center;
+}
+
+select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.apply-btn {
+  width: 100%;
+  padding: 8px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.apply-btn:hover {
+  background: #0056b3;
+}
+
 /* For small devices (max-width: 600px) */
 @media (max-width: 600px) {
   .flight-form {
