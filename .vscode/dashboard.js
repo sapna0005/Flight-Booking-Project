@@ -36,3 +36,45 @@ let details=async()=>{
 
 
 
+let GetflightDetails = async () => {
+  
+      let res = await fetch("http://localhost:3000/admin", { method: "GET" });
+      let data = await res.json();
+      console.log(data);
+      displayflightdetails(data);
+     
+    };
+
+
+let displayflightdetails = (data) => {
+  let flightsection = document.querySelector("#frontt");
+  flightsection.innerHTML = ""; // Clear previous data
+
+  data.forEach((flight) => {
+      flightsection.innerHTML += `
+          <div class="card">
+              <p>Flight Name: ${flight.flightname}</p>
+              <p>Flight Number: ${flight.flightnum}</p>
+              <p>Arrival Time: ${flight.arrivaltime}</p>
+              <p>Departure Time: ${flight.deptime}</p>
+              <p>Arrival City: ${flight.arrcity}</p>
+              <p>Departure City: ${flight.depcity}</p>
+              <p>Stop Time: ${flight.stoptime}</p>
+              <p>Price: ${flight.price}</p>
+              <button onclick="bookFlight('${flight.flightnum}')">Book Flight</button>
+          </div>
+      `;
+  });
+};
+
+// Define bookFlight function
+let bookFlight = (flightNum) => {
+  alert(`Booking flight number: ${flightNum}`);
+};
+
+window.onload = () => {
+  GetflightDetails();
+ 
+};
+
+

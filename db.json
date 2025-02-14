@@ -122,6 +122,39 @@
       "depcity": "gaya",
       "stoptime": "1hr",
       "price": "699"
+    },
+    {
+      "id": "8b54",
+      "flightname": "AirIndia",
+      "flightnumber": "00789",
+      "arrivaltime": "17:42",
+      "deptime": "20:40",
+      "arrcity": "bhopal",
+      "depcity": "gaya",
+      "stoptime": "1hr",
+      "price": "7000"
+    },
+    {
+      "id": "59f9",
+      "flightname": "AirInd",
+      "flightnumber": "007",
+      "arrivaltime": "17:00",
+      "deptime": "18:00",
+      "arrcity": "bhopal",
+      "depcity": "gaya",
+      "stoptime": "1hr",
+      "price": "699"
+    },
+    {
+      "id": "7f61",
+      "flightname": "indigo",
+      "flightnumber": "00789",
+      "arrivaltime": "22:26",
+      "deptime": "22:26",
+      "arrcity": "bhopal",
+      "depcity": "gaya",
+      "stoptime": "2hr",
+      "price": "3200"
     }
   ]
 }

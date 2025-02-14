@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +9,6 @@
   <link rel="stylesheet" href="dashboard.css">
   <title>Document</title>
 </head>
-
 <body>
   <div id="login-page">
     <div class="logo">
@@ -28,11 +26,6 @@
               class="fa-solid fa-plane-up"></i> My Trips</a></li>
         <li data-aos="flip-down" data-aos-duration="3000" data-aos-delay="600"><a href="#"><i
               class="fa-solid fa-circle-question"></i> Help</a></li>
-        <!-- Login and Sign Up inside the hamburger -->
-        <!-- <li data-aos="flip-left" data-aos-duration="3000" data-aos-delay="800" class="btn-signup" onclick="logout()"><i
-              class="fa-solid fa-user"></i>Logout</li>
-        <li data-aos="flip-left" data-aos-duration="3000" data-aos-delay="800"><a href="login.html" class="btn-login"><i
-              class="fa-solid fa-user"></i> Login</a></li> -->
       </ul>
     </nav>
   </div>
@@ -49,235 +42,46 @@
  
   <section id="formdetails">
     <h1>Flight Details</h1>
-   <form id="flightdetails">
+    <form id="flightdetails" >
+      <!-- FlightName -->
+      <label for="flightname">FlightName</label>
+      <input type="text" id="flightname"><br>
 
-    <!-- FlightName -->
-    <label for="flightname">FlightName</label>
-    <input type="text" id="flightname"><br>
+      <!-- FlightNumber -->
+      <label for="flightnum">FlightNumber</label>
+      <input type="text" id="flightnum"><br>
 
-    <!-- FlightNumber -->
-    <label for="flightnum">FlightNumber</label>
-    <input type="text" id="flightnum"><br>
+      <!-- ArrivalTime -->
+      <label for="arrivaltime">ArrivalTime</label>
+      <input type="time" id="arrivaltime"><br>
 
-    <!-- ArrivalTime -->
-    <label for="arrivaltime">ArrivalTime</label>
-    <input type="time" id="arrivaltime"><br>
+      <!-- DepartureTime -->
+      <label for="deptime">DepartureTime</label>
+      <input type="time" id="deptime"><br>
 
-    <!-- DepartureTime -->
-    <label for="deptime">DepartureTime</label>
-    <input type="time" id="deptime"><br>
+      <!-- ArrivalCity -->
+      <label for="arrcity">ArrivalCity</label>
+      <input type="text" id="arrcity"><br>
 
-    <!-- ArrivalCity -->
-    <label for="arrcity">ArrivalCity</label>
-    <input type="text" id="arrcity"><br>
+      <!-- DepartureCity -->
+      <label for="depcity">DepartureCity</label>
+      <input type="text" id="depcity"><br>
 
-    <!-- DepartureCity -->
-    <label for="depcity">DepartureCity</label>
-    <input type="text" id="depcity"><br>
+      <!-- StoppageTime -->
+      <label for="stoptime">StoppageTime</label>
+      <input type="text" id="stoptime"><br>
 
-    <!-- StoppageTime -->
-    <label for="stoptime">StoppageTime</label>
-    <input type="text" id="stoptime"><br>
+      <!-- Price -->
+      <label for="price">Price</label><br>
+      <input type="text" id="price"><br>
 
-    <!-- Price -->
-    <label for="price">Price</label>
-    <input type="text" id="price"><br>
-
-    <!-- Button -->
-    <input type="submit" value="Add Flight" onclick="return details()">
-  
-  </form>
-</section>
-  
-
-  <section id="main-content">
-    <div id="flight-details1">
-
-      <div id="indigoing">
-        <img src="../Image/logo.png" alt="">
-        <div id="container">
-          <h3>Indigo</h3>
-          <p>6E708</p>
-        </div>
-      </div>
-
-      <div id="time">
-        <h5>04:00</h5>
-        <p>DEL</p>
-      </div>
-
-      <div>
-        <p>2h 15min</p>
-        <p>-----------</p>
-        <p>Non stop</p>
-      </div>
-
-      <div id="time">
-        <h5>06:20</h5>
-        <p>BOM</p>
-      </div>
-
-      <div id="time">
-        <h5>Rs.5,499</h5>
-        <p><a href="#">Extra Rs.490 off</a></p>
-      </div>
-
-      <div id="btn">
-        <input type="submit" value="Add">
-      </div>
-    </div>
-
-    <div id="flight-details1">
-
-      <div id="indigoing">
-        <img src="../Image/logo.png" alt="">
-        <div id="container">
-          <h3>Indigo</h3>
-          <p>6E708</p>
-        </div>
-      </div>
-
-      <div id="time">
-        <h5>04:00</h5>
-        <p>DEL</p>
-      </div>
-
-      <div>
-        <p>2h 15min</p>
-        <p>-----------</p>
-        <p>Non stop</p>
-      </div>
-
-      <div id="time">
-        <h5>06:20</h5>
-        <p>BOM</p>
-      </div>
-
-      <div id="time">
-        <h5>Rs.5,499</h5>
-        <p><a href="#">Extra Rs.490 off</a></p>
-      </div>
-
-      <div id="btn">
-        <input type="submit" value="Add">
-      </div>
-    </div>
-
-    <div id="flight-details1">
-
-      <div id="indigoing">
-        <img src="../Image/logo.png" alt="">
-        <div id="container">
-          <h3>Indigo</h3>
-          <p>6E708</p>
-        </div>
-      </div>
-
-      <div id="time">
-        <h5>04:00</h5>
-        <p>DEL</p>
-      </div>
-
-      <div>
-        <p>2h 15min</p>
-        <p>-----------</p>
-        <p>Non stop</p>
-      </div>
-
-      <div id="time">
-        <h5>06:20</h5>
-        <p>BOM</p>
-      </div>
-
-      <div id="time">
-        <h5>Rs.5,499</h5>
-        <p><a href="#">Extra Rs.490 off</a></p>
-      </div>
-
-      <div id="btn">
-        <input type="submit" value="Add">
-      </div>
-    </div>
-
-    <div id="flight-details1">
-
-      <div id="indigoing">
-        <img src="../Image/logo.png" alt="">
-        <div id="container">
-          <h3>Indigo</h3>
-          <p>6E708</p>
-        </div>
-      </div>
-
-      <div id="time">
-        <h5>04:00</h5>
-        <p>DEL</p>
-      </div>
-
-      <div>
-        <p>2h 15min</p>
-        <p>-----------</p>
-        <p>Non stop</p>
-      </div>
-
-      <div id="time">
-        <h5>06:20</h5>
-        <p>BOM</p>
-      </div>
-
-      <div id="time">
-        <h5>Rs.5,499</h5>
-        <p><a href="#">Extra Rs.490 off</a></p>
-      </div>
-
-      <div id="btn">
-        <input type="submit" value="Add">
-      </div>
-    </div>
-
-    <div id="flight-details1">
-
-      <div id="indigoing">
-        <img src="../Image/logo.png" alt="">
-        <div id="container">
-          <h3>Indigo</h3>
-          <p>6E708</p>
-        </div>
-      </div>
-
-      <div id="time">
-        <h5>04:00</h5>
-        <p>DEL</p>
-      </div>
-
-      <div>
-        <p>2h 15min</p>
-        <p>-----------</p>
-        <p>Non stop</p>
-      </div>
-
-      <div id="time">
-        <h5>06:20</h5>
-        <p>BOM</p>
-      </div>
-
-      <div id="time">
-        <h5>Rs.5,499</h5>
-        <p><a href="#">Extra Rs.490 off</a></p>
-      </div>
-
-      <div id="btn">
-        <input type="submit" value="Add">
-      </div>
-    </div>
-
-
-
-
+      <!-- Button -->
+      <input type="submit" value="Add Flight">
+    </form>
   </section>
 
+ 
 
   <script src="dashboard.js"></script>
 </body>
-
 </html>
